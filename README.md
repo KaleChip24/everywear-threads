@@ -15,6 +15,7 @@ Everywear Threads is an inclusive second-hand fashion marketplace app where peop
 <br>
 
 ### Wireframes
+***
 
 
 ![here](https://i.ibb.co/XDYtv0H/Screen-Shot-2021-12-22-at-11-16-25.png)
@@ -45,13 +46,15 @@ Everywear Threads is an inclusive second-hand fashion marketplace app where peop
 
 <br>
 
-#### Flowchart
+#### Flowcharts
+***
 
 ![flowchart](https://i.ibb.co/sJmvvgV/Screen-Shot-2021-12-22-at-11-31-26.png)
 
 - Backend
 
 ![flowchart](https://i.ibb.co/JFXFCrd/Screen-Shot-2021-12-22-at-11-31-18.png)
+
 - Frontend
 <br>
 
@@ -84,7 +87,7 @@ export default mongoose.model('users', User)
 ```
 const Schema = mongoose.Schema;
 
-const Post = new Schema(
+const Product = new Schema(
 	{
 		price: {type: String, required: true},
 		item: {type: String, required: true},
@@ -98,7 +101,7 @@ const Post = new Schema(
 	{ timestamp: true }
 )
 
-export default mongoose.model('posts', Post)
+export default mongoose.model('products', Product)
 ```
 <br>
 
