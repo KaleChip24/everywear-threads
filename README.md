@@ -106,6 +106,8 @@ export default mongoose.model('posts', Post)
 
 ### MVP
 
+[GitHub Projects](https://github.com/KaleChip24/everywear-threads/projects/1)
+
 #### Client (Front End)
 ***
  - Have a working, interactive React app, built using npx create-react-app client
