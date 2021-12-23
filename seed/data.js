@@ -1,6 +1,6 @@
 import db from '../db/connection.js';
 import Product from '../models/product.js';
-import User from '../models/user'
+import User from '../models/user.js'
 import bcrypt from 'bcrypt'
 
 const insertData = async () => {
@@ -23,113 +23,143 @@ const insertData = async () => {
   const products = [
     {
       price: '29.95',
-      item: 'Jeans',
+      item: 'Dior T-Shirt',
       size: 'M',
       style: 'streetwear',
-      color: 'Blue',
-      brand: 'Levi',
+      color: 'White',
+      brand: 'Dior',
       description: 'Something corny and cliche',
-      imgURL:
-        'https://i.pinimg.com/736x/76/4a/62/764a62bea10d4dc0211d1cc8e6aa27e4.jpg',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item15/IMG_0212.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item15/IMG_0213.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item15/IMG_0215.JPG'
+      ]
     },
     {
       price: '39.95',
-      item: 'Cardigan',
+      item: 'Balmain Shirt',
       size: 'XL',
-      style: 'Vintage',
-      color: 'Pink',
-      brand: 'Northman',
+      style: 'T-Shirt',
+      color: 'Black',
+      brand: 'Balmain',
       description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0021/5629/8301/products/f4eca61300cc9523e3dd2037989f4fa6_1080x.jpg?v=1618284838',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item14/IMG_0218.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item14/IMG_0219.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item14/IMG_0220.JPG',
+      ]
     },
     {
-      price: '11.99',
-      item: 'T-Shirt',
+      price: '64.99',
+      item: 'Dior Sweatshirt',
       size: 'XL',
-      style: 'Sports Wear',
+      style: 'Sweatwear',
+      color: 'Black',
+      brand: 'Dior',
+      description: 'Something corny and cliche',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item13/IMG_0222.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item13/IMG_0224.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item13/IMG_0226.JPG',
+      ]
+    },
+    {
+      price: '219.99',
+      item: 'YSL Trench Coat',
+      size: 'L',
+      style: 'Outerwear',
+      color: 'Black',
+      brand: 'YSL',
+      description: 'Something corny and cliche',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item12/IMG_0230.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item12/IMG_0231.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item12/IMG_0232.JPG'
+      ]
+    },
+    {
+      price: '69.99',
+      item: 'Louis Vutton Belt',
+      size: '32 in',
+      style: 'Accessory',
       color: 'Grey',
-      brand: 'Nike',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
+      brand: 'Louis Vutton',
+      description: 'Want to make your outfit POP! Wear this and recieve compliments all evening long.',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/8ead015efa6e546798ca53ae913673d90e69a8a4/assets/inventory/item1/IMG_0173.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/8ead015efa6e546798ca53ae913673d90e69a8a4/assets/inventory/item1/IMG_0174.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/8ead015efa6e546798ca53ae913673d90e69a8a4/assets/inventory/item1/IMG_0176.JPG'
+      ]
     },
     {
-      price: '4.99',
-      item: 'T-Shirt',
-      size: 'XL',
-      style: 'Sports Wear',
-      color: 'Grey',
-      brand: 'Nike',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
-    },
+      price: '49.99',
+      item: 'Shirt',
+      size: 'L',
+      style: 'T-Shirt',
+      color: 'Black',
+      brand: 'Celine',
+      description: 'This Celine shirt ...',
+      imgURL:[
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item2/IMG_0178.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item2/IMG_0179.JPG',
+      'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item2/IMG_0180.JPG',
+      ]
+     },
     {
-      price: '17.99',
-      item: 'T-Shirt',
-      size: 'XL',
-      style: 'Sports Wear',
-      color: 'Grey',
-      brand: 'Nike',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
-    },
-    {
-      price: '16.99',
-      item: 'T-Shirt',
-      size: 'XL',
-      style: 'Sports Wear',
-      color: 'Grey',
-      brand: 'Nike',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
-    },
-    {
-      price: '35',
-      item: 'T-Shirt',
-      size: 'XL',
-      style: 'Sports Wear',
-      color: 'Grey',
-      brand: 'Nike',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
-    },
-    {
-      price: '7.99',
-      item: 'T-Shirt',
-      size: 'XL',
-      style: 'Sports Wear',
-      color: 'Grey',
-      brand: 'Nike',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
-    },
-    {
-      price: '19.99',
-      item: 'Jeans',
-      size: 'SM',
-      style: 'Causual',
-      color: 'Grey',
-      brand: 'Guess',
-      description: 'Something corny and cliche',
-      imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
-    },
-    {
-      price: '14.99',
-      item: 'T-Shirt',
-      size: 'XL',
+      price: '79.95',
+      item: 'Celine Shoes',
+      size: '10.5',
       style: 'Shoes',
-      color: 'Grey',
-      brand: 'Convers',
+      color: 'Black',
+      brand: 'Celine',
       description: 'Something corny and cliche',
       imgURL:
-        'https://cdn.shopify.com/s/files/1/0408/9909/products/Nike-Sportswear-Club-T-Shirt---DK-Driftwood-White-AR4997-258---11-22-2021---01_1080x.jpg?v=1637620638',
+        [
+          'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item3/IMG_0166.JPG',
+          'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item3/IMG_0167.JPG',
+          'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item3/IMG_0170.JPG',
+        ]
+    },
+    {
+      price: '89.95',
+      item: 'Celine Jacket',
+      size: 'XL',
+      style: 'Outerwear',
+      color: 'Black',
+      brand: 'Celine',
+      description: 'Something corny and cliche',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item4/IMG_0184.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item4/IMG_0185.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item4/IMG_0188.JPG'
+      ]
+    },
+    {
+      price: '39.95',
+      item: 'YSL Shirt',
+      size: 'SM',
+      style: 'T-Shirt',
+      color: 'White',
+      brand: 'YSL',
+      description: 'Something corny and cliche',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item10/IMG_0244.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item10/IMG_0245.JPG',
+      ]
+    },
+    {
+      price: '109.95',
+      item: 'YSL',
+      size: 'L',
+      style: 'Outerwear',
+      color: 'Green',
+      brand: 'YSL',
+      description: 'Something corny and cliche',
+      imgURL: [
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item11/IMG_0236.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item11/IMG_0237.JPG',
+        'https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item11/IMG_0238.JPG',
+      ]
     },
   ]
 
