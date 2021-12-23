@@ -1,15 +1,15 @@
-import './App.css';
-import { Routes } from 'react-router';
-import { Route } from 'react-router-dom';
+// import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Products from './screens/Products/Products.js';
 
-export const App = () => {
+const App = () => {
 	return (
 		<div className='App'>
 			<Routes>
-				<Route path='/' element={Home}>
-					This is the homepage palceholder
-				</Route>
+				<Route path='/' element={<Products />}/>
 			</Routes>
 		</div>
 	);
 };
+
+export default App
