@@ -15,6 +15,9 @@ app.use(logger('dev'))
 app.use('/api', productRoutes)
 
 db.on('connected', () => {
-	console.log('Connected to MongoDB!')
-	app.listen(PORT, () => console.log(`Express server application is running on port ${PORT}`))
+  console.log('Connected to MongoDB!')
+  app.listen(PORT, () => 
+    process.env.NODE_ENV === 'production'
+      ? console.log(`Express server running in production on port ${PORT}\n\n`) 
+        : console.log(`Express server running in development on: http://localhost:${PORT}`))
 })
