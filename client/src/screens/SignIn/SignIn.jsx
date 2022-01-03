@@ -68,7 +68,7 @@ const { email, password } = form
         <label>Password</label>
         <input
           required
-          name='email'
+          name='password'
           value={password}
           type='password'
           placeholder='Password'
