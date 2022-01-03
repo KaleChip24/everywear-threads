@@ -16,15 +16,23 @@ export default function Products() {
   }, [])
 
   return (
-    <div className='products'>
-      {products.map((product, index) => {
-        return (
-          <div>
-            <h1>{product.brand}</h1>
-          </div>
-        )
-      })}
-      
-    </div>
-  )
+		<div className='products'>
+			{products.map((product, index) => {
+				return (
+					<div>
+						<div className='productImage'>
+							{product.imgURL.map((image) => {
+								return <img src={image}></img>;
+							})}
+						</div>
+						<h2>{product.item}</h2>
+						<h3>By {product.brand}</h3>
+						<h5>{product.price}</h5>
+						<h5>{product.color}</h5>
+						<p>{product.description}</p>
+					</div>
+				);
+			})}
+		</div>
+  );
 }
