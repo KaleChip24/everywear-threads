@@ -2,8 +2,8 @@ import "./App.css";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Products from "./screens/Products/Products.js";
 import { verifyUser } from "./services/users";
-import ProductCreate from "./screens/ProductCreate/ProductCreate";
-import ProductEdit from "./screens/ProductEdit/ProductEdit";
+// import ProductCreate from "./screens/ProductCreate/ProductCreate";
+// import ProductEdit from "./screens/ProductEdit/ProductEdit";
 import ProductDetail from "./screens/ProductDetail/ProductDetail";
 import SignUp from "./screens/SignUp/SignUp";
 import SignIn from "./screens/SignIn/SignIn";
@@ -30,7 +30,7 @@ const App = () => {
         <Route path="/sign-in" element={<SignIn setUser={setUser} />} />
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route path="/products" element={<Products user={user} />} />
-        <Route
+        {/* <Route
           path="/add-product"
           element={
             user ? <ProductCreate user={user} /> : <Navigate to="/sign-up" />
@@ -39,7 +39,7 @@ const App = () => {
         <Route
           path="products/:id/edit"
           element={user ? <ProductEdit user={user} /> : <Navigate to="/" />}
-        />
+        /> */}
         <Route path="/products/:id" element={<ProductDetail user={user} />} />
       </Routes>
     </div>
