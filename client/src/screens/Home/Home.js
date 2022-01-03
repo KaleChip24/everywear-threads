@@ -7,7 +7,6 @@ export const Home = () => {
         <div className='Home'>
             <Layout>
                 <div className='productBox'>
-                    {apiResponse.map((p.))}
                 </div>
             </Layout>
         </div>
