@@ -24,7 +24,7 @@ export default function Products(props) {
             <Product
               item={product.item}
               brand={product.brand}
-              price={`$${product.price}`}
+              price={product.price}
               color={product.color}
               descriprion={product.description}
               imgURL={product.imgURL}
