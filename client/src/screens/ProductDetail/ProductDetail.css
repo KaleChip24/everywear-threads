@@ -1,0 +1,19 @@
+@media (max-width: 800px) {
+  .product-detail-image {
+    width: 300px;
+    margin: 15px;
+    padding: 10px;
+  }
+  .product-detail {
+    padding: 0px;
+    padding-top: 120px;
+  }
+  .button-container {
+    padding: 20px;
+    padding-bottom: 80px;
+  }
+  .edit-button,
+  .delete-button {
+    width: 40%;
+  }
+}
