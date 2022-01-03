@@ -1,7 +1,30 @@
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   align-items: center;
   flex: 1;
   padding: 20px;
+} */
+footer {
+  padding: 15px 5px 0px 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #f4f0ea;
+  background-color: #3b3834;
+}
+
+footer a {
+  margin: 5px;
+  color: #f4f0ea;
+  transition: all 0.2s ease-in-out;
+}
+footer a:hover {
+  color: #06dabd;
+}
+
+footer p {
+  word-spacing: 2px;
+  letter-spacing: 1.5px;
 }
