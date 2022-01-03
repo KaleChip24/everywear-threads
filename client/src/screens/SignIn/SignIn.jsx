@@ -8,7 +8,7 @@ const SignIn = (props) => {
   const [form, setForm] = useState({
     email: '',
     password: '',
-    isError: '',
+    isError: false,
     errorMsg: '',
   })
 
@@ -65,12 +65,13 @@ const { email, password } = form
           placeholder='Enter Email'
           onChange={handleChange}
         />
+        <label>Password</label>
         <input
           required
           name='email'
           value={password}
-          type="password"
-          placeholder='Enter Password'
+          type='password'
+          placeholder='Password'
           onChange={handleChange}
         />
         {renderError()}

@@ -1,7 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import { getProducts } from "../../services/products";
-import { Layout, Product } from "../../components";
+import Product from "../../components/Product/Product";
+import Layout from "../../components/Layout/Layout";
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);
@@ -20,18 +21,15 @@ export default function Products(props) {
       <div className="products">
         {products.map((product, index) => {
           return (
-            <div>
-              <div className="productImage">
-                {product.imgURL.map((image) => {
-                  return <img src={image} alt={product.name}></img>;
-                })}
-              </div>
-              <h2>{product.item}</h2>
-              <h3>By {product.brand}</h3>
-              <h5>{`$${product.price}`}</h5>
-              <h5>{product.color}</h5>
-              <p>{product.description}</p>
-            </div>
+            <Product
+              item={product.item}
+              brand={product.brand}
+              price={`$${product.price}`}
+              color={product.color}
+              descriprion={product.description}
+              imgURL={product.imgURL}
+              key={index}
+            />
           );
         })}
       </div>
