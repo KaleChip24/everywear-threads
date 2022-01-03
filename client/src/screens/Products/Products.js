@@ -16,6 +16,8 @@ export default function Products(props) {
     fetchProducts();
   }, []);
 
+  const handleSubmit = (event) => event.preventDefault();
+
   return (
     <Layout user={props.user}>
       <div className="products">
