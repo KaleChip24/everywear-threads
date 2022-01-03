@@ -1,63 +1,102 @@
-// import { useState } from 'react'
-// import { signUp } from '../../services/users'
-import { useNavigate } from 'react-router-dom'
+import { useState } from "react";
+import { signUp } from "../../services/users";
+import { useNavigate } from "react-router-dom";
+import "./SignUp.css";
 
-export default function SignUp() {
-  const navigate = useNavigate()
+export default function SignUp(props) {
+  const navigate = useNavigate();
 
-  const [form, setForm] = useSate({
-    username: '',
-    email: '',
-    passwordConfirmation: '',
+  const [form, setForm] = useState({
+    username: "",
+    email: "",
+    passwordConfirmation: "",
     isError: false,
-    errorMsg: '',
-  })
+    errorMsg: "",
+  });
 
-  // const handleChange = (event)
+  const handleChange = (event) =>
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
 
-  const { username, email, password, passwordConfirmation } = form
+  const onSignUp = async (event) => {
+    event.preventDefault();
+    const { setUser } = props;
+    try {
+      const user = await signUp(form);
+      setUser(user);
+      navigate("/");
+    } catch (error) {
+      console.error(error);
+      setForm({
+        username: "",
+        email: "",
+        password: "",
+        passwordConfirmation: "",
+        isError: true,
+        errorMsg: "Sign Up Details Invalid",
+      });
+    }
+  };
+
+  const renderError = () => {
+    const toggleForm = form.isError ? "danger" : "";
+    if (form.isError) {
+      return (
+        <button type="submit" className={toggleForm}>
+          {form.errorMsg}
+        </button>
+      );
+    } else {
+      return <button type="submit">Sign Up</button>;
+    }
+  };
+
+  const { username, email, password, passwordConfirmation } = form;
+
   return (
-    <div className='form-container'>
+    <div className="form-container">
       <h3>Sign Up</h3>
-      <form>
+      <form onSubmit={onSignUp}>
         <label>Username</label>
         <input
           required
-          type='text'
-          name='username'
+          type="text"
+          name="username"
           value={username}
-          placeholder='Enter username'
+          placeholder="Enter username"
           onChange={handleChange}
         />
         <label>Email address</label>
         <input
           required
-          type='email'
-          name='email'
+          type="email"
+          name="email"
           value={email}
-          placeholder='Enter email'
+          placeholder="Enter email"
           onChange={handleChange}
         />
         <label>Password</label>
         <input
           required
-          name='password'
+          name="password"
           value={password}
-          type='password'
-          placeholder='Password'
+          type="password"
+          placeholder="Password"
           onChange={handleChange}
         />
         <label>Password Confirmation</label>
         <input
           required
-          name='passwordConfirmation'
+          name="passwordConfirmation"
           value={passwordConfirmation}
-          type='password'
-          placeholder='Confirm Password'
+          type="password"
+          placeholder="Confirm Password"
           onChange={handleChange}
         />
         {renderError()}
       </form>
     </div>
-  )
+  );
 }

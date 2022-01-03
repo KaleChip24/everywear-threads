@@ -1,0 +1,19 @@
+.products {
+  /* width: 90vw; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 40px;
+}
+
+@media (max-width: 500px) {
+  .products {
+    width: 100%;
+    justify-content: space-around;
+  }
+  .sort-container {
+    width: 100%;
+    justify-content: center;
+    margin: 0px;
+  }
+}
