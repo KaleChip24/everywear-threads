@@ -1,0 +1,24 @@
+@media (max-width: 500px) {
+  .input-name {
+    margin-left: -10px;
+    padding-left: -10px;
+    font-size: 26px;
+  }
+  .edit-form {
+    padding: 0px;
+  }
+  .textarea-description {
+    width: 100%;
+    padding: 0px;
+  }
+  .product-edit {
+    width: 100%;
+    flex-direction: column;
+  }
+  .image-container {
+    width: 100%;
+  }
+  .edit-product-image {
+    width: 300px;
+  }
+}
