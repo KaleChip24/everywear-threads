@@ -1,72 +1,60 @@
 import "./Footer.css";
+import { FiLinkedin } from "react-icons/fi"
+import { VscGithub } from "react-icons/vsc"
 
 const Footer = () => {
 
   return (
     <footer>
-
       <div className="team_links">
-        <div className="kale-link">
+        <div className="kale-links">
           <p>Kale</p>
           <a
-            className="gitHub"
             href="https://github.com/KaleChip24"
             target="_blank"
             rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
-              className="icons"
-              alt="GitHub" />
+            <VscGithub></VscGithub>
           </a>
-          <a className="linkdIn"
+          <a
             href="https://www.linkedin.com/in/oharakale/"
             target="_blank"
             rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-              className="icons"
-              alt="linkedin" />
+            <FiLinkedin></FiLinkedin>
           </a>
+        </div>
+        <div className="zhao-links">
           <p>Zhao</p>
           <a
             className="gitHub"
             href="https://github.com/iamzhaozhong"
             target="_blank"
             rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
-              className="icons"
-              alt="GitHub" />
+            <VscGithub></VscGithub>
           </a>
           <a className="linkdIn"
             href="https://www.linkedin.com/in/junzhaozhongliu/"
             target="_blank"
             rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-              className="icons"
-              alt="linkedin" />
+            <FiLinkedin></FiLinkedin>
           </a>
+        </div>
+        <div className="lavell-links">
           <p>Lavell</p>
           <a
             className="gitHub"
             href="https://github.com/lavell25"
             target="_blank"
             rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
-              class="icons"
-              alt="GitHub" />
+            <VscGithub></VscGithub>
           </a>
           <a className="linkdIn"
             href="https://www.linkedin.com/in/lavellHCollins/"
             target="_blank"
             rel="noreferrer">
-            <img
-              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/linkedin_vnvo6s.png"
-              className="icons"
-              alt="linkedin" />
+            <FiLinkedin></FiLinkedin>
           </a>
+        </div>
+        <div className="copyright-yr">
           <small>&copy; GA SEI Velvet Worms 2022</small>
         </div>
 

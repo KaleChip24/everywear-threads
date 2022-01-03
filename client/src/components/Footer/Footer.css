@@ -11,20 +11,30 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  color: #f4f0ea;
   background-color: #3b3834;
 }
 
 footer a {
   margin: 5px;
-  color: #f4f0ea;
+  color: #DEAAFF;
   transition: all 0.2s ease-in-out;
 }
 footer a:hover {
-  color: #06dabd;
+  color: #C0FDFF;
 }
 
 footer p {
   word-spacing: 2px;
   letter-spacing: 1.5px;
+}
+
+.team_links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.copyright-yr {
+  margin-top: 25px;
+  color: #DEAAFF;
 }
