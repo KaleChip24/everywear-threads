@@ -3,7 +3,6 @@ import { FiLinkedin } from "react-icons/fi"
 import { VscGithub } from "react-icons/vsc"
 
 const Footer = () => {
-
   return (
     <footer>
       <div className="team_links">
@@ -20,6 +19,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer">
             <FiLinkedin></FiLinkedin>
+
           </a>
         </div>
         <div className="zhao-links">
@@ -57,11 +57,9 @@ const Footer = () => {
         <div className="copyright-yr">
           <small>&copy; GA SEI Velvet Worms 2022</small>
         </div>
-
       </div>
-
     </footer>
-  )
-}
+  );
+};
 
 export default Footer;
