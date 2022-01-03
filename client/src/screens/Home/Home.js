@@ -1,14 +1,13 @@
-import { useState, useEffect } from 'react';
-import Layout from './Layout';
-import './Home.css'
+import Layout from "./Layout";
+import "./Home.css";
+import ProductCards from "../../components/ProductCards/ProductCards";
 
-export const Home = () => {
-    return (
-        <div className='Home'>
-            <Layout>
-                <div className='productBox'>
-                </div>
-            </Layout>
-        </div>
-    )
+export const Home = (props) => {
+  return (
+    <Layout user={props.user}>
+      <div className="home">
+        <ProductCards />
+      </div>
+    </Layout>
+  );
 };
