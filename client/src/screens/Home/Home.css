@@ -3,3 +3,17 @@
     padding: 100px 40px;
   }
 }
+
+.landing-img {
+  width: 800px;
+  margin: 15px;
+  padding: 10px;
+}
+
+p{
+  padding-left: 30px;
+}
+
+button {
+  align-self: flex-end;
+}
