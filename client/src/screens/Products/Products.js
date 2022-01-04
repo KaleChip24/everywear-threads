@@ -3,11 +3,14 @@ import { getProducts } from "../../services/products";
 import Product from "../../components/Product/Product";
 import Layout from "../../components/Layout/Layout";
 import Search from "../../components/Search/Search";
-import { Link } from "react-router-dom";
+import Sort from "../../components/Sort/Sort";
+import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
+  const [applySort, setApplySort] = useState(false);
+  const [sortType, setSortType] = useState("name-ascending");
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -18,11 +21,39 @@ export default function Products(props) {
     fetchProducts();
   }, []);
 
+  const handleSort = (type) => {
+    if (type !== "" && type !== undefined) {
+      setSortType(type);
+    }
+    switch (type) {
+      case "name-ascending":
+        setSearchResult(AZ(searchResult));
+        break;
+      case "name-descending":
+        setSearchResult(ZA(searchResult));
+        break;
+      case "price-ascending":
+        setSearchResult(lowestFirst(searchResult));
+        break;
+      case "price-descending":
+        setSearchResult(highestFirst(searchResult));
+        break;
+      default:
+        break;
+    }
+  };
+
+  if (applySort) {
+    handleSort(sortType);
+    setSortType(false);
+  }
+
   const handleSearch = (event) => {
     const results = products.filter((product) =>
       product.name.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setSearchResult(results);
+    setApplySort(true);
   };
 
   const handleSubmit = (event) => event.preventDefault();
@@ -30,6 +61,7 @@ export default function Products(props) {
   return (
     <Layout user={props.user}>
       <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
       <div className="products">
         {searchResult.map((product, index) => {
           return (
