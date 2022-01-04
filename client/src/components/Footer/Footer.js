@@ -54,6 +54,22 @@ const Footer = () => {
             <FiLinkedin></FiLinkedin>
           </a>
         </div>
+        <div className="Kaheem-links">
+          <p>Kaheem</p>
+          <a
+            className="gitHub"
+            href="https://github.com/kashfr"
+            target="_blank"
+            rel="noreferrer">
+            <VscGithub></VscGithub>
+          </a>
+          <a className="linkdIn"
+            href="https://www.linkedin.com/in/kaheem-freeman-7b8b349b/"
+            target="_blank"
+            rel="noreferrer">
+            <FiLinkedin></FiLinkedin>
+          </a>
+        </div>
         <div className="copyright-yr">
           <small>&copy; GA SEI Velvet Worms 2022</small>
         </div>
