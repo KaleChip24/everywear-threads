@@ -3,7 +3,6 @@ import { getProducts } from "../../services/products";
 import Product from "../../components/Product/Product";
 import Layout from "../../components/Layout/Layout";
 import Search from "../../components/Search/Search";
-import { Link } from "react-router-dom";
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);
