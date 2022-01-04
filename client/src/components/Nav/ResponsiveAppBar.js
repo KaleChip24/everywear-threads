@@ -11,8 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import CardMedia from '@mui/material/CardMedia';
 
-const pages = ['Products', 'Pricing', 'Blog'];
+const pages = ['HOME', 'Login', 'Sign Up'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -35,31 +36,46 @@ const ResponsiveAppBar = () => {
 	};
 
 	return (
-		<AppBar position="static">
-			<Container maxWidth="xl">
+		<AppBar
+			position='static'
+			sx={{
+				backgroundColor: '#c8e7ff',
+				maxHeight: '20vh',
+			}}>
+			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
-					<Typography
-						variant="h6"
-						noWrap
-						component="div"
-						sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-					>
-						LOGO
-					</Typography>
+					{/* //the logo */}
+					<Container maxWidth='sm'>
+						<Box>
+							<CardMedia
+								style={{
+									height: 'auto',
+									width: 'auto',
+									maxHeight: '20vh',
+								}}
+								component='img'
+								image='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
+								alt='logo'
+							/>
+						</Box>
+					</Container>
 
-					<Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
+					<Box
+						sx={{
+							flexGrow: 1,
+							display: { xs: 'flex', md: 'none' },
+						}}>
 						<IconButton
-							size="large"
-							aria-label="account of current user"
-							aria-controls="menu-appbar"
-							aria-haspopup="true"
+							size='large'
+							aria-label='account of current user'
+							aria-controls='menu-appbar'
+							aria-haspopup='true'
 							onClick={handleOpenNavMenu}
-							color="inherit"
-						>
+							color='inherit'>
 							<MenuIcon />
 						</IconButton>
 						<Menu
-							id="menu-appbar"
+							id='menu-appbar'
 							anchorEl={anchorElNav}
 							anchorOrigin={{
 								vertical: 'bottom',
@@ -74,44 +90,59 @@ const ResponsiveAppBar = () => {
 							onClose={handleCloseNavMenu}
 							sx={{
 								display: { xs: 'block', md: 'none' },
-							}}
-						>
+							}}>
 							{pages.map((page) => (
-								<MenuItem key={page} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{page}</Typography>
+								<MenuItem
+									key={page}
+									onClick={handleCloseNavMenu}>
+									<Typography
+										textAlign='center'
+										sx={{
+											display: {
+												xs: 'block',
+												md: 'none',
+											},
+										}}>
+										{page}
+									</Typography>
 								</MenuItem>
 							))}
 						</Menu>
 					</Box>
-					<Typography
-						variant="h6"
-						noWrap
-						component="div"
-						sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-					>
-						LOGO
-					</Typography>
-					<Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+
+					<Box
+						sx={{
+							flexGrow: 1,
+							display: { xs: 'none', md: 'flex' },
+						}}>
 						{pages.map((page) => (
 							<Button
 								key={page}
 								onClick={handleCloseNavMenu}
-								sx={{ my: 2, color: 'white', display: 'block' }}
-							>
+								sx={{
+									color: 'black',
+									display: 'block',
+									margin: '1%',
+								}}>
 								{page}
 							</Button>
 						))}
 					</Box>
 
 					<Box sx={{ flexGrow: 0 }}>
-						<Tooltip title="Open settings">
-							<IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-								<Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+						<Tooltip title='Open settings'>
+							<IconButton
+								onClick={handleOpenUserMenu}
+								sx={{ p: 0 }}>
+								<Avatar
+									alt='user'
+									src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/icons/nav.png'
+								/>
 							</IconButton>
 						</Tooltip>
 						<Menu
 							sx={{ mt: '45px' }}
-							id="menu-appbar"
+							id='menu-appbar'
 							anchorEl={anchorElUser}
 							anchorOrigin={{
 								vertical: 'top',
@@ -123,11 +154,14 @@ const ResponsiveAppBar = () => {
 								horizontal: 'right',
 							}}
 							open={Boolean(anchorElUser)}
-							onClose={handleCloseUserMenu}
-						>
+							onClose={handleCloseUserMenu}>
 							{settings.map((setting) => (
-								<MenuItem key={setting} onClick={handleCloseNavMenu}>
-									<Typography textAlign="center">{setting}</Typography>
+								<MenuItem
+									key={setting}
+									onClick={handleCloseNavMenu}>
+									<Typography textAlign='center'>
+										{setting}
+									</Typography>
 								</MenuItem>
 							))}
 						</Menu>
