@@ -51,7 +51,7 @@ const ResponsiveAppBar = () => {
 								display: 'flex',
 							}}>
 							<img
-								src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/Pink%20and%20Blue%20Box%20Art%20%26%20Design%20Logo.png'
+								src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
 								alt='logo'
 							/>
 						</Box>
