@@ -1,8 +1,8 @@
-import Layout from "./Layout";
+import Layout from "../../components/Layout/Layout";
 import "./Home.css";
 import ProductCards from "../../components/ProductCards/ProductCards";
 
-export const Home = (props) => {
+const Home = (props) => {
   return (
     <Layout user={props.user}>
       <div className="home">
@@ -11,3 +11,5 @@ export const Home = (props) => {
     </Layout>
   );
 };
+
+export default Home;
