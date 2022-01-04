@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import CardMedia from '@mui/material/CardMedia';
 
 const pages = ['HOME', 'Login', 'Sign Up'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
@@ -35,23 +36,25 @@ const ResponsiveAppBar = () => {
 	};
 
 	return (
-		<AppBar position='static'>
-			<Container
-				maxWidth='xl'
-				sx={{
-					backgroundColor: '#c8e7ff',
-					maxHeight: '20vh',
-				}}>
+		<AppBar
+			position='static'
+			sx={{
+				backgroundColor: '#c8e7ff',
+				maxHeight: '20vh',
+			}}>
+			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
 					{/* //the logo */}
 					<Container maxWidth='sm'>
-						<Box
-							sx={{
-								height: '18vh',
-								display: 'flex',
-							}}>
-							<img
-								src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
+						<Box>
+							<CardMedia
+								style={{
+									height: 'auto',
+									width: 'auto',
+									maxHeight: '20vh',
+								}}
+								component='img'
+								image='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
 								alt='logo'
 							/>
 						</Box>
@@ -119,8 +122,7 @@ const ResponsiveAppBar = () => {
 								sx={{
 									color: 'black',
 									display: 'block',
-									mb: '30%',
-									ml: '12%',
+									margin: '1%',
 								}}>
 								{page}
 							</Button>
@@ -133,8 +135,8 @@ const ResponsiveAppBar = () => {
 								onClick={handleOpenUserMenu}
 								sx={{ p: 0 }}>
 								<Avatar
-									alt='Remy Sharp'
-									src='/static/images/avatar/2.jpg'
+									alt='user'
+									src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
 								/>
 							</IconButton>
 						</Tooltip>
