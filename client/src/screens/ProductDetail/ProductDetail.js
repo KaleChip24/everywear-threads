@@ -25,11 +25,11 @@ const ProductDetail = (props) => {
   return (
     <Layout>
       <div className='product-detail'>
-        <img
-          className='product-detail-image'
-          src={product.imgURL[0]}
-          alt={product.name}
-        />
+      {product.imgURL.map((image) => {
+          return (
+            <img className="product-image" src={image} alt={props.imgURL}></img>
+          );
+        })}
         <div className='detail'>
           <div className='name'>{product.name}</div>
           <div className='price'>{`$${product.price}`}</div>
