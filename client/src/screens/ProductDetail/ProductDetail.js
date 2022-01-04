@@ -7,6 +7,7 @@ import { useParams, Link } from 'react-router-dom';
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
+  const [isDeleted, setDeleted] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -18,6 +19,8 @@ const ProductDetail = (props) => {
     fetchProduct();
   }, [id]);
 
+
+
   if (!isLoaded) {
     return <h1>Loading...</h1>;
   }
@@ -25,14 +28,14 @@ const ProductDetail = (props) => {
   return (
     <Layout>
       <div className='product-detail'>
-      {product.imgURL.map((image) => {
+        {product.imgURL.map((image) => {
           return (
             <img className="product-image" src={image} alt={props.imgURL}></img>
           );
         })}
         <div className='detail'>
-        <div className='item'>{product.item}</div>
-        <div className='price'>Price: {`${product.price}`}</div>
+          <div className='item'>{product.item}</div>
+          <div className='price'>Price: {`${product.price}`}</div>
           <div className='item'>Size: {product.size}</div>
           <div className='item'>Style: {product.style}</div>
           <div className='brand'>Brand: {product.brand}</div>
