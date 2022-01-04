@@ -31,9 +31,13 @@ const ProductDetail = (props) => {
           );
         })}
         <div className='detail'>
-          <div className='name'>{product.name}</div>
-          <div className='price'>{`$${product.price}`}</div>
-          <div className='description'>{product.description}</div>
+        <div className='item'>{product.item}</div>
+        <div className='price'>Price: {`${product.price}`}</div>
+          <div className='item'>Size: {product.size}</div>
+          <div className='item'>Style: {product.style}</div>
+          <div className='brand'>Brand: {product.brand}</div>
+          <div className='description'>Product Description: {product.description}</div>
+          <div className='color'>Color: {product.color}</div>
           <div className='button-container'>
             <button className='edit-button'>
               <Link
