@@ -3,8 +3,11 @@ import { getProducts } from "../../services/products";
 import Product from "../../components/Product/Product";
 import Layout from "../../components/Layout/Layout";
 import Search from "../../components/Search/Search";
+<<<<<<< HEAD
 import Sort from "../../components/Sort/Sort";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
+=======
+>>>>>>> 6cb0a5a4f68624a1cb48528036ca89ab219b73d0
 
 export default function Products(props) {
   const [products, setProducts] = useState([]);

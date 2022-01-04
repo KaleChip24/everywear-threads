@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signUp } from "../../services/users";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Navigate } from "react-router-dom";
 import "./SignUp.css";
 
 export default function SignUp(props) {
@@ -97,6 +97,10 @@ export default function SignUp(props) {
         />
         {renderError()}
       </form>
+      <p>
+        Already signed up?
+        <button onClick={<Navigate to="/sign-in" />}>Sign In</button>
+      </p>
     </div>
   );
 }
