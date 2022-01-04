@@ -55,8 +55,6 @@ export default function SignUp(props) {
 
   const { username, email, password, passwordConfirmation } = form;
 
-  const handleClick = () => <Navigate to="/sign-in" />;
-
   return (
     <div className="form-container">
       <h3>Sign Up</h3>
@@ -101,10 +99,8 @@ export default function SignUp(props) {
       </form>
       <p>
         Already signed up?
-        <button>
-          <Link to={"/sign-in"} />
-          Sign In
-        </button>
+        <Link to={`/sign-in`} />
+        <button>Sign In</button>
       </p>
     </div>
   );
