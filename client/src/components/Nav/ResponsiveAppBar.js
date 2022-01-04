@@ -36,11 +36,24 @@ const ResponsiveAppBar = () => {
 
 	return (
 		<AppBar position='static'>
-			<Container maxWidth='xl'>
+			<Container
+				maxWidth='xl'
+				sx={{
+					backgroundColor: '#c8e7ff',
+					maxHeight: '20vh',
+				}}>
 				<Toolbar disableGutters>
+					{/* //the logo */}
 					<Container maxWidth='sm'>
-						<Box sx={{ bgcolor: '#cfe8fc', height: '45vh' }}>
-							<img src=''></img>
+						<Box
+							sx={{
+								height: '18vh',
+								display: 'flex',
+							}}>
+							<img
+								src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/Pink%20and%20Blue%20Box%20Art%20%26%20Design%20Logo.png'
+								alt='logo'
+							/>
 						</Box>
 					</Container>
 
@@ -79,23 +92,21 @@ const ResponsiveAppBar = () => {
 								<MenuItem
 									key={page}
 									onClick={handleCloseNavMenu}>
-									<Typography textAlign='center'>
+									<Typography
+										textAlign='center'
+										sx={{
+											display: {
+												xs: 'block',
+												md: 'none',
+											},
+										}}>
 										{page}
 									</Typography>
 								</MenuItem>
 							))}
 						</Menu>
 					</Box>
-					<Typography
-						variant='h6'
-						noWrap
-						component='div'
-						sx={{
-							flexGrow: 1,
-							display: { xs: 'flex', md: 'none' },
-						}}>
-						LOGO
-					</Typography>
+
 					<Box
 						sx={{
 							flexGrow: 1,
@@ -106,9 +117,10 @@ const ResponsiveAppBar = () => {
 								key={page}
 								onClick={handleCloseNavMenu}
 								sx={{
-									my: 2,
-									color: 'white',
+									color: 'black',
 									display: 'block',
+									mb: '30%',
+									ml: '12%',
 								}}>
 								{page}
 							</Button>
