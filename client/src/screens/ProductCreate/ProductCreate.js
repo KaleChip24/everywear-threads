@@ -12,6 +12,10 @@ const ProductCreate = (props) => {
     description: "",
     imgURL: "",
     price: "",
+    size: "",
+    item: "",
+    style: "",
+    brand: "",
   });
 
   const handleChange = (event) => {
@@ -30,6 +34,7 @@ const ProductCreate = (props) => {
 
   return (
     <Layout user={props.user}>
+      <img src="" alt="New Item"></img>
       <form className="create-form" onSubmit={handleSubmit}>
         <input
           className="input-name"
@@ -63,6 +68,42 @@ const ProductCreate = (props) => {
           value={product.imgURL}
           name="imgURL"
           required
+          onChange={handleChange}
+        />
+        <input
+          className="input-size"
+          placeholder="Size"
+          value={product.size}
+          name="size"
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <input
+          className="input-item"
+          placeholder="Item"
+          value={product.item}
+          name="item"
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <input
+          className="input-style"
+          placeholder="Style"
+          value={product.style}
+          name="style"
+          required
+          autoFocus
+          onChange={handleChange}
+        />
+        <input
+          className="input-brand"
+          placeholder="Brand"
+          value={product.brand}
+          name="brand"
+          required
+          autoFocus
           onChange={handleChange}
         />
         <button type="submit" className="submit-button">
