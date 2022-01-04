@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import './ProductDetail.css';
 import Layout from '../../components/Layout/Layout';
 import { getProduct, deleteProduct } from '../../services/products';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -19,10 +19,18 @@ const ProductDetail = (props) => {
     fetchProduct();
   }, [id]);
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await deleteProduct(id, product);
+    setDeleted(true)
+  };
 
+  if (isDeleted) {
+    return <Navigate to={`/products`} />;
+  }
 
   if (!isLoaded) {
-    return <h1>Loading...</h1>;
+    return <h1>Loading in Style...</h1>;
   }
 
   return (
@@ -52,7 +60,7 @@ const ProductDetail = (props) => {
             </button>
             <button
               className='delete-button'
-              onClick={() => deleteProduct(product._id)}
+              onClick={handleSubmit}
             >
               Delete
             </button>
