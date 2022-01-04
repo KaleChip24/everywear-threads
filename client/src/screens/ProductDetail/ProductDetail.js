@@ -2,11 +2,12 @@ import { useState, useEffect } from 'react';
 import './ProductDetail.css';
 import Layout from '../../components/Layout/Layout';
 import { getProduct, deleteProduct } from '../../services/products';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, Navigate } from 'react-router-dom';
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
   const [isLoaded, setLoaded] = useState(false);
+  const [isDeleted, setDeleted] = useState(false);
   const { id } = useParams();
 
   useEffect(() => {
@@ -18,21 +19,31 @@ const ProductDetail = (props) => {
     fetchProduct();
   }, [id]);
 
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    await deleteProduct(id, product);
+    setDeleted(true)
+  };
+
+  if (isDeleted) {
+    return <Navigate to={`/products`} />;
+  }
+
   if (!isLoaded) {
-    return <h1>Loading...</h1>;
+    return <h1>Loading in Style...</h1>;
   }
 
   return (
     <Layout>
       <div className='product-detail'>
-      {product.imgURL.map((image) => {
+        {product.imgURL.map((image) => {
           return (
             <img className="product-image" src={image} alt={props.imgURL}></img>
           );
         })}
         <div className='detail'>
-        <div className='item'>{product.item}</div>
-        <div className='price'>Price: {`${product.price}`}</div>
+          <div className='item'>{product.item}</div>
+          <div className='price'>Price: {`${product.price}`}</div>
           <div className='item'>Size: {product.size}</div>
           <div className='item'>Style: {product.style}</div>
           <div className='brand'>Brand: {product.brand}</div>
@@ -49,7 +60,7 @@ const ProductDetail = (props) => {
             </button>
             <button
               className='delete-button'
-              onClick={() => deleteProduct(product._id)}
+              onClick={handleSubmit}
             >
               Delete
             </button>

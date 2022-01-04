@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { signUp } from "../../services/users";
-import { useNavigate, Navigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "./SignUp.css";
 
 export default function SignUp(props) {
@@ -99,8 +99,9 @@ export default function SignUp(props) {
       </form>
       <p>
         Already signed up?
-        <Link to={`/sign-in`} />
-        <button>Sign In</button>
+        <Link to={`/sign-in`} >
+          <button>Sign In</button>
+        </Link>
       </p>
     </div>
   );
