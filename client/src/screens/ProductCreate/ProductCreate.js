@@ -10,7 +10,7 @@ const ProductCreate = (props) => {
   const [product, setProduct] = useState({
     item: "",
     description: "",
-    imgURL: "",
+    imgURL: [],
     price: "",
     size: "",
     style: "",
@@ -54,7 +54,23 @@ const ProductCreate = (props) => {
           />
           <input
             className="input-image-link"
-            placeholder="Image Link"
+            placeholder="Image 1"
+            value={product.imgURL}
+            name="imgURL"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input-image-link"
+            placeholder="Image 2"
+            value={product.imgURL}
+            name="imgURL"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input-image-link"
+            placeholder="Image 3"
             value={product.imgURL}
             name="imgURL"
             required
@@ -109,7 +125,11 @@ const ProductCreate = (props) => {
             Submit
           </button>
         </form>
-        <img className="add-img" src="https://i.ibb.co/TBG91Ws/Upload.png" alt="New Item"></img>
+        <img
+          className="add-img"
+          src="https://i.ibb.co/TBG91Ws/Upload.png"
+          alt="New Item"
+        ></img>
       </div>
     </Layout>
   );
