@@ -8,12 +8,11 @@ const ProductCreate = (props) => {
   let navigate = useNavigate();
 
   const [product, setProduct] = useState({
-    name: "",
+    item: "",
     description: "",
     imgURL: "",
     price: "",
     size: "",
-    item: "",
     style: "",
     brand: "",
   });
@@ -36,15 +35,6 @@ const ProductCreate = (props) => {
     <Layout user={props.user}>
       <div className="add-item">
         <form className="create-form" onSubmit={handleSubmit}>
-          <input
-            className="input-name"
-            placeholder="Name"
-            value={product.name}
-            name="name"
-            required
-            autoFocus
-            onChange={handleChange}
-          />
           <input
             className="input-price"
             placeholder="Price"
