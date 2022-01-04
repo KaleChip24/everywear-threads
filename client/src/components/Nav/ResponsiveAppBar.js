@@ -136,7 +136,7 @@ const ResponsiveAppBar = () => {
 								sx={{ p: 0 }}>
 								<Avatar
 									alt='user'
-									src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
+									src='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/icons/nav.png'
 								/>
 							</IconButton>
 						</Tooltip>
