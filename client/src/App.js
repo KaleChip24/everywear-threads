@@ -30,12 +30,7 @@ const App = () => {
         <Route path="/sign-in" element={<SignIn setUser={setUser} />} />
         <Route path="/sign-out" element={<SignOut setUser={setUser} />} />
         <Route path="/products" element={<Products user={user} />} />
-        <Route
-          path="/add-product"
-          element={
-            user ? <ProductCreate user={user} /> : <Navigate to="/sign-up" />
-          }
-        />
+        <Route path="/add-product" element={ user ? <ProductCreate user={user} /> : <Navigate to="/sign-up" /> }/>
         <Route
           path="products/:id/edit"
           element={user ? <ProductEdit user={user} /> : <Navigate to="/" />}
