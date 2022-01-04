@@ -96,6 +96,15 @@ const ProductCreate = (props) => {
             autoFocus
             onChange={handleChange}
           />
+          <input
+            className="input-color"
+            placeholder="Color"
+            value={product.color}
+            name="color"
+            required
+            autoFocus
+            onChange={handleChange}
+          />
           <button type="submit" className="submit-button">
             Submit
           </button>
