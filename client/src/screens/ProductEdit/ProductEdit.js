@@ -60,10 +60,10 @@ const ProductEdit = (props) => {
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
           <input
-            className="input-name"
-            placeholder="Name"
-            value={product.name}
-            name="name"
+            className="input-brand"
+            placeholder="Brand"
+            value={product.brand}
+            name="brand"
             required
             autoFocus
             onChange={handleChange}
@@ -73,6 +73,30 @@ const ProductEdit = (props) => {
             placeholder="Price"
             value={product.price}
             name="price"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input-size"
+            placeholder="Size"
+            value={product.size}
+            name="size"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input-color"
+            placeholder="Color"
+            value={product.color}
+            name="color"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="input-style"
+            placeholder="Style"
+            value={product.style}
+            name="style"
             required
             onChange={handleChange}
           />
