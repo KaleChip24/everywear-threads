@@ -1,11 +1,38 @@
-.add-item{
+.add-item {
   display: flex;
 }
 
-form{
+.create-form {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+form {
   display: flex;
 }
-.add-img{
+
+.add-img {
   height: 100vh;
-  width: 500px
+  width: 500px;
+}
+
+@media (max-width: 500px) {
+  .create-form {
+    padding-top: 150px;
+  }
+
+  input,
+  textarea {
+    font-size: 28px;
+  }
 }
