@@ -45,6 +45,7 @@ const Products = (props) => {
 
   const handleSearch = (event) => {
     const results = products.filter((product) => {
+
       if (event.target.value.length > -1) {
         return (
           product.brand
