@@ -44,19 +44,29 @@ const Products = (props) => {
   };
 
   const handleSearch = (event) => {
-		const results = products.filter((product) => {
-			if (event.target.value.toLowerCase().length > 0) {
-				return (
-					product.brand.match(event.target.value.toString()) ||
-					product.price.includes(event.target.value.toString()) ||
-					product.size.match(event.target.value.toUpperCase()) ||
-					product.color.match(event.target.value.toString()) ||
-					product.description.match(event.target.value.toString())
-				);
-			}
-		});
-		setSearchResult(results);
-		setApplySort(true);
+    const results = products.filter((product) => {
+      if (event.target.value.length > -1) {
+        return (
+          product.brand
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase()) ||
+          product.price
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase()) ||
+          product.size
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase()) ||
+          product.color
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase()) ||
+          product.description
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase())
+        );
+      }
+    });
+    setSearchResult(results);
+    setApplySort(true);
   };
 
   if (applySort) {
