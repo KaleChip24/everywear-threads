@@ -4,16 +4,11 @@
   }
 }
 
-.landing-img {
-  width: 800px;
-  margin: 15px;
-  padding: 10px;
-}
-
 p{
-  padding-left: 30px;
+  padding: 20px;
+  width: 300px;
 }
 
-button {
+/* home-btn {
   align-self: flex-end;
-}
+} */

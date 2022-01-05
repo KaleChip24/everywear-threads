@@ -9,6 +9,14 @@
   overflow-x: scroll;
 }
 
+.cards img{
+  height: 300px;
+  padding: 5px;
+  margin: 8px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 1px #DEAAFF;
+}
+s
 .latest {
   font-size: 20px;
   color: rgb(56, 55, 55);

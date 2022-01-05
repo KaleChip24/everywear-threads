@@ -30,7 +30,7 @@ const ProductCards = () => {
 
   return (
     <div className="product-cards">
-      <div className="latest">LATEST</div>
+      <h1 className="latest">LATEST</h1>
       <div className="cards">{CARDS}</div>
     </div>
   );
