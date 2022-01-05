@@ -53,30 +53,39 @@ const SignIn = (props) => {
   const { email, password } = form;
 
   return (
-    <div className="form-container">
-      <h2>Sign In</h2>
-      <form onSubmit={onSignIn}>
-        <label>Email</label>
-        <input
-          required
-          type="text"
-          name="email"
-          value={email}
-          placeholder="Enter Email"
-          onChange={handleChange}
-        />
-        <label>Password</label>
-        <input
-          required
-          name="password"
-          value={password}
-          type="password"
-          placeholder="Password"
-          onChange={handleChange}
-        />
-        {renderError()}
-      </form>
-    </div>
+		<div className='form-container'>
+			<div className='left-side'>
+				<h2>Welcome Back!</h2>
+				<br />
+				<h3>Please sign in using your credentials.</h3>
+				<br />
+				<form onSubmit={onSignIn}>
+					<input
+						required
+						type='text'
+						name='email'
+						value={email}
+						placeholder='Email'
+						onChange={handleChange}
+					/>
+					<input
+						required
+						name='password'
+						value={password}
+						type='password'
+						placeholder='Password'
+						onChange={handleChange}
+					/>
+					{renderError()}
+				</form>
+			</div>
+			<div className='right-side'>
+				<img
+					src='https://github.com/KaleChip24/everywear-threads/raw/development/assets/SignUp%2BSignIn%2BUpload/Login.png'
+					alt='signin'
+				/>
+			</div>
+		</div>
   );
 };
 
