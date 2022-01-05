@@ -5,9 +5,14 @@ const Product = (props) => {
   return (
     <>
       <Link className="product" to={`/products/${props._id}`}>
-        {props.imgURL.map((image) => {
+        {props.imgURL.map((image, index) => {
           return (
-            <img className="product-image" src={image} alt={props.name}></img>
+            <img
+              key={index}
+              className="product-image"
+              src={image}
+              alt={props.name}
+            ></img>
           );
         })}
         <div className="product-name">{props.name}</div>

@@ -6,7 +6,7 @@ import Search from "../../components/Search/Search";
 import Sort from "../../components/Sort/Sort";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
 
-export default function Products(props) {
+const Products = (props) => {
   const [products, setProducts] = useState([]);
   const [searchResult, setSearchResult] = useState([]);
   const [applySort, setApplySort] = useState(false);
@@ -43,18 +43,18 @@ export default function Products(props) {
     }
   };
 
-  if (applySort) {
-    handleSort(sortType);
-    setSortType(false);
-  }
-
   const handleSearch = (event) => {
     const results = products.filter((product) =>
-      product.name.toLowerCase().includes(event.target.value.toLowerCase())
+      product.brand.toLowerCase().includes(event.target.value.toLowerCase())
     );
     setSearchResult(results);
     setApplySort(true);
   };
+
+  if (applySort) {
+    handleSort(sortType);
+    setApplySort(false);
+  }
 
   const handleSubmit = (event) => event.preventDefault();
 
@@ -80,4 +80,6 @@ export default function Products(props) {
       </div>
     </Layout>
   );
-}
+};
+
+export default Products;

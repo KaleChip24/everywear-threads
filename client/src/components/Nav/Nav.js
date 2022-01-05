@@ -41,7 +41,7 @@ const Nav = ({ user }) => {
           Everywear Threads
         </NavLink>
         <div className="links">
-          {user && <div className="link welcome">Bonjour, {user.name}</div>}
+          {user && <div className="link welcome">Bonjour, {user.username}</div>}
           {alwaysOptions}
           {user ? authenticatedOptions : unauthenticatedOptions}
         </div>

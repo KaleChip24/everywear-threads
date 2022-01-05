@@ -83,7 +83,7 @@ const insertData = async () => {
       size: "32 in",
       style: "Accessory",
       color: "Grey",
-      brand: "Louis Vutton",
+      brand: "Louis Vuitton",
       description:
         "Want to make your outfit POP! Wear this and recieve compliments all evening long.",
       imgURL: [
@@ -168,11 +168,12 @@ const insertData = async () => {
       style: "Vintage Sweater",
       color: "Olive Green",
       brand: "Redgray",
-      description: "Wanna smell like moth balls and Bengay? If so buy this sweater",
+      description:
+        "Wanna smell like moth balls and Bengay? If so buy this sweater",
       imgURL: [
-        'https://cdnimg.emmiol.com/E/202109/img_original-FBI0107TO-0203310512.jpg',
-        'https://cdnimg.emmiol.com/E/202109/img_original-FBI0107TO-02031059124.jpg',
-        'https://cdnimg.emmiol.com/E/202109/img_original-FBI0107TO-0203210851.jpg',
+        "https://cdnimg.emmiol.com/E/202109/img_original-FBI0107TO-0203310512.jpg",
+        "https://cdnimg.emmiol.com/E/202109/img_original-FBI0107TO-02031059124.jpg",
+        "https://cdnimg.emmiol.com/E/202109/img_original-FBI0107TO-0203210851.jpg",
       ],
     },
     {
@@ -182,11 +183,12 @@ const insertData = async () => {
       style: "Varsity Jacket",
       color: "Blue",
       brand: "Hysterics",
-      description: "Wanna dress like a Jock without actually being one? You have to buy this jacket to impress the cheerleaders!",
+      description:
+        "Wanna dress like a Jock without actually being one? You have to buy this jacket to impress the cheerleaders!",
       imgURL: [
-        'https://cdnimg.emmiol.com/E/202111/img_original-QBK0036OU-0500809312.jpg',
-        'https://cdnimg.emmiol.com/E/202111/img_original-QBK0036OU-050002715.jpg',
-        'https://cdnimg.emmiol.com/E/202111/img_original-QBK0036OU-050063519.jpg',
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0036OU-0500809312.jpg",
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0036OU-050002715.jpg",
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0036OU-050063519.jpg",
       ],
     },
     {
@@ -196,11 +198,12 @@ const insertData = async () => {
       style: "Varsity Jacket",
       color: "Black",
       brand: "Avdiaiy",
-      description: "Wanna dress like a Jock without actually being one? You have to buy this jacket to impress the cheerleaders!",
+      description:
+        "Wanna dress like a Jock without actually being one? You have to buy this jacket to impress the cheerleaders!",
       imgURL: [
-        'https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-222387603.jpg',
-        'https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-222327608.jpg',
-        'https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-22239101225.jpg',
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-222387603.jpg",
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-222327608.jpg",
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-22239101225.jpg",
       ],
     },
   ];
