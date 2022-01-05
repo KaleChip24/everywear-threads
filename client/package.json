@@ -19,7 +19,9 @@
 		"react-router": "^6.2.1",
 		"react-router-dom": "^6.2.1",
 		"react-scripts": "^5.0.0",
+		"react-spring-3d-carousel": "^1.2.1",
 		"styled-components": "^5.3.3",
+		"uuid": "^8.3.2",
 		"web-vitals": "^2.1.2"
 	},
 	"scripts": {
