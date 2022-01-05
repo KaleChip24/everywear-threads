@@ -23,9 +23,9 @@ const insertData = async () => {
   const products = [
     {
       price: "29.95",
-      item: "Dior T-Shirt",
-      size: "M",
-      style: "streetwear",
+      item: "T-Shirt",
+      size: "Medium",
+      style: "Streetwear",
       color: "White",
       brand: "Dior",
       description: "Something corny and cliche",
@@ -37,8 +37,8 @@ const insertData = async () => {
     },
     {
       price: "39.95",
-      item: "Balmain Shirt",
-      size: "XL",
+      item: "T-Shirt",
+      size: "Extra-Large",
       style: "T-Shirt",
       color: "Black",
       brand: "Balmain",
@@ -51,9 +51,9 @@ const insertData = async () => {
     },
     {
       price: "64.99",
-      item: "Dior Sweatshirt",
-      size: "XL",
-      style: "Sweatwear",
+      item: "Sweater",
+      size: "Extra-Large",
+      style: "Streetwear",
       color: "Black",
       brand: "Dior",
       description: "Something corny and cliche",
@@ -65,8 +65,8 @@ const insertData = async () => {
     },
     {
       price: "219.99",
-      item: "YSL Trench Coat",
-      size: "L",
+      item: "Jacket",
+      size: "Large",
       style: "Outerwear",
       color: "Black",
       brand: "YSL",
@@ -79,7 +79,7 @@ const insertData = async () => {
     },
     {
       price: "69.99",
-      item: "Louis Vutton Belt",
+      item: "Belt",
       size: "32 in",
       style: "Accessory",
       color: "Grey",
@@ -94,7 +94,7 @@ const insertData = async () => {
     },
     {
       price: "79.95",
-      item: "Celine Shoes",
+      item: "Shoes",
       size: "10.5",
       style: "Shoes",
       color: "Black",
@@ -108,8 +108,8 @@ const insertData = async () => {
     },
     {
       price: "89.95",
-      item: "Celine Jacket",
-      size: "XL",
+      item: "Jacket",
+      size: "Extra-Large",
       style: "Outerwear",
       color: "Black",
       brand: "Celine",
@@ -122,8 +122,8 @@ const insertData = async () => {
     },
     {
       price: "39.95",
-      item: "YSL Shirt",
-      size: "SM",
+      item: "Shirt",
+      size: "Small",
       style: "T-Shirt",
       color: "White",
       brand: "YSL",
@@ -135,8 +135,8 @@ const insertData = async () => {
     },
     {
       price: "109.95",
-      item: "YSL",
-      size: "L",
+      item: "Jacket",
+      size: "Large",
       style: "Outerwear",
       color: "Green",
       brand: "YSL",
@@ -149,8 +149,8 @@ const insertData = async () => {
     },
     {
       price: "109.95",
-      item: "Granddad Sweater",
-      size: "L",
+      item: "Sweater",
+      size: "Large",
       style: "Outerwear",
       color: "Green",
       brand: "Houndstooth",
@@ -163,8 +163,8 @@ const insertData = async () => {
     },
     {
       price: "49.99",
-      item: "Your Granddads sweater",
-      size: "L",
+      item: "Sweater",
+      size: "Large",
       style: "Vintage Sweater",
       color: "Olive Green",
       brand: "Redgray",
@@ -179,7 +179,7 @@ const insertData = async () => {
     {
       price: "53",
       item: "Jacket",
-      size: "L",
+      size: "Large",
       style: "Varsity Jacket",
       color: "Blue",
       brand: "Hysterics",
@@ -194,7 +194,7 @@ const insertData = async () => {
     {
       price: "69",
       item: "Jacket",
-      size: "XL",
+      size: "Extra-Large",
       style: "Varsity Jacket",
       color: "Black",
       brand: "Avdiaiy",
