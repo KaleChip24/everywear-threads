@@ -15,18 +15,26 @@ const ProductCreate = (props) => {
     size: "",
     style: "",
     brand: "",
+    color: "",
   });
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setProduct({
-      ...product,
-      [name]: value,
-    });
+  const handleChange = (e) => {
+    const { name, value, id } = e.target;
+    if (name === "imgURL") {
+      const updatedProduct = { ...product }
+      updatedProduct.imgURL[id] = value
+      setProduct(updatedProduct)
+    }
+    else {
+      setProduct({
+        ...product,
+        [name]: value,
+      });
+    }
   };
 
-  const handleSubmit = async (event) => {
-    event.preventDefault();
+  const handleSubmit = async (e) => {
+    e.preventDefault();
     await createProduct(product);
     navigate("/products");
   };
@@ -38,16 +46,16 @@ const ProductCreate = (props) => {
           <input
             className="input-price"
             placeholder="Price"
-            value={product.price}
+            value={props.price}
             name="price"
             required
             onChange={handleChange}
           />
-          <textarea
+          <input
             className="textarea-description"
             rows={10}
             placeholder="Description"
-            value={product.description}
+            value={props.description}
             name="description"
             required
             onChange={handleChange}
@@ -55,31 +63,34 @@ const ProductCreate = (props) => {
           <input
             className="input-image-link"
             placeholder="Image 1"
-            value={product.imgURL}
+            value={props.imgURL}
             name="imgURL"
+            id="0"
             required
             onChange={handleChange}
           />
           <input
             className="input-image-link"
             placeholder="Image 2"
-            value={product.imgURL}
+            value={props.imgURL}
             name="imgURL"
+            id="1"
             required
             onChange={handleChange}
           />
           <input
             className="input-image-link"
             placeholder="Image 3"
-            value={product.imgURL}
+            value={props.imgURL}
             name="imgURL"
+            id="2"
             required
             onChange={handleChange}
           />
           <input
             className="input-size"
             placeholder="Size"
-            value={product.size}
+            value={props.size}
             name="size"
             required
             autoFocus
@@ -88,7 +99,7 @@ const ProductCreate = (props) => {
           <input
             className="input-item"
             placeholder="Item"
-            value={product.item}
+            value={props.item}
             name="item"
             required
             autoFocus
@@ -97,7 +108,7 @@ const ProductCreate = (props) => {
           <input
             className="input-style"
             placeholder="Style"
-            value={product.style}
+            value={props.style}
             name="style"
             required
             autoFocus
@@ -106,7 +117,7 @@ const ProductCreate = (props) => {
           <input
             className="input-brand"
             placeholder="Brand"
-            value={product.brand}
+            value={props.brand}
             name="brand"
             required
             autoFocus
@@ -115,7 +126,7 @@ const ProductCreate = (props) => {
           <input
             className="input-color"
             placeholder="Color"
-            value={product.color}
+            value={props.color}
             name="color"
             required
             autoFocus
@@ -125,11 +136,7 @@ const ProductCreate = (props) => {
             Submit
           </button>
         </form>
-        <img
-          className="add-img"
-          src="https://i.ibb.co/TBG91Ws/Upload.png"
-          alt="New Item"
-        ></img>
+        <img className="add-img" src="https://i.ibb.co/TBG91Ws/Upload.png" alt="New Item"></img>
       </div>
     </Layout>
   );

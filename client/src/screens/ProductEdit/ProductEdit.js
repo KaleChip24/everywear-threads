@@ -8,10 +8,14 @@ const ProductEdit = (props) => {
   let navigate = useNavigate();
 
   const [product, setProduct] = useState({
-    name: "",
+    item: "",
     description: "",
-    imgURL: "",
+    imgURL: [],
     price: "",
+    brand: "",
+    size: "",
+    style: "", 
+    color: "",
   });
 
   let { id } = useParams();
@@ -45,7 +49,7 @@ const ProductEdit = (props) => {
           <img
             className="edit-product-image"
             src={product.imgURL}
-            alt={product.name}
+            alt={product.item}
           />
           <form onSubmit={handleSubmit}>
             <input
