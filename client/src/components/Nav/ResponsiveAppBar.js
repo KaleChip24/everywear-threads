@@ -12,8 +12,10 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import CardMedia from '@mui/material/CardMedia';
+import { CardActions } from '@mui/material';
+import { NavLink } from 'react-router-dom';
 
-const pages = ['HOME', 'Login', 'Sign Up'];
+const pages = ['Home', 'Products', 'Sign-In', 'Sign-Up'];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const ResponsiveAppBar = () => {
@@ -47,16 +49,20 @@ const ResponsiveAppBar = () => {
 					{/* //the logo */}
 					<Container maxWidth='sm'>
 						<Box>
-							<CardMedia
-								style={{
-									height: 'auto',
-									width: 'auto',
-									maxHeight: '20vh',
-								}}
-								component='img'
-								image='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
-								alt='logo'
-							/>
+							<CardActions>
+								<NavLink to='/Home'>
+									<CardMedia
+										style={{
+											height: 'auto',
+											width: 'auto',
+											maxHeight: '20vh',
+										}}
+										component='img'
+										image='https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/logo/logo.png'
+										alt='logo'
+									/>
+								</NavLink>
+							</CardActions>
 						</Box>
 					</Container>
 
@@ -92,20 +98,24 @@ const ResponsiveAppBar = () => {
 								display: { xs: 'block', md: 'none' },
 							}}>
 							{pages.map((page) => (
-								<MenuItem
-									key={page}
-									onClick={handleCloseNavMenu}>
-									<Typography
-										textAlign='center'
-										sx={{
-											display: {
-												xs: 'block',
-												md: 'none',
-											},
-										}}>
-										{page}
-									</Typography>
-								</MenuItem>
+								<CardActions>
+									<MenuItem
+										key={page}
+										onClick={handleCloseNavMenu}>
+										<NavLink to={`/${page}`}>
+											<Typography
+												textAlign='center'
+												sx={{
+													display: {
+														xs: 'block',
+														md: 'none',
+													},
+												}}>
+												{page}
+											</Typography>
+										</NavLink>
+									</MenuItem>
+								</CardActions>
 							))}
 						</Menu>
 					</Box>
@@ -116,16 +126,21 @@ const ResponsiveAppBar = () => {
 							display: { xs: 'none', md: 'flex' },
 						}}>
 						{pages.map((page) => (
-							<Button
-								key={page}
-								onClick={handleCloseNavMenu}
-								sx={{
-									color: 'black',
-									display: 'block',
-									margin: '1%',
-								}}>
-								{page}
-							</Button>
+							<CardActions>
+								<Button
+									component={NavLink}
+									to={`${page}`}
+									variant='outlined'
+									key={page}
+									onClick={handleCloseNavMenu}
+									sx={{
+										color: 'black',
+										display: 'block',
+										margin: 'auto',
+									}}>
+									{page}
+								</Button>
+							</CardActions>
 						))}
 					</Box>
 
