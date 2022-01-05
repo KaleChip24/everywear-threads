@@ -48,6 +48,12 @@ const Products = (props) => {
 
       if (event.target.value.length > -1) {
         return (
+          product.style
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase()) ||
+          product.item
+            .toLowerCase()
+            .includes(event.target.value.toLowerCase()) ||
           product.brand
             .toLowerCase()
             .includes(event.target.value.toLowerCase()) ||
@@ -58,9 +64,6 @@ const Products = (props) => {
             .toLowerCase()
             .includes(event.target.value.toLowerCase()) ||
           product.color
-            .toLowerCase()
-            .includes(event.target.value.toLowerCase()) ||
-          product.description
             .toLowerCase()
             .includes(event.target.value.toLowerCase())
         );
