@@ -44,11 +44,19 @@ const Products = (props) => {
   };
 
   const handleSearch = (event) => {
-    const results = products.filter((product) =>
-      product.brand.toLowerCase().includes(event.target.value.toLowerCase())
-    );
-    setSearchResult(results);
-    setApplySort(true);
+		const results = products.filter((product) => {
+			if (event.target.value.toLowerCase().length > 0) {
+				return (
+					product.brand.match(event.target.value.toString()) ||
+					product.price.includes(event.target.value.toString()) ||
+					product.size.match(event.target.value.toUpperCase()) ||
+					product.color.match(event.target.value.toString()) ||
+					product.description.match(event.target.value.toString())
+				);
+			}
+		});
+		setSearchResult(results);
+		setApplySort(true);
   };
 
   if (applySort) {
