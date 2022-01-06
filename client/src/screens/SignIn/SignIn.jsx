@@ -62,8 +62,9 @@ const SignIn = (props) => {
         <div className="left-side">
           <div className="left-wrapper">
             <div className="inner-box">
-              <h3>Welcome Back!</h3>
-              <h4>Please sign in using your credentials.</h4>
+              <h3 className="text">Welcome Back!</h3>
+              <br />
+              <h4 className="text">Please sign in using your credentials.</h4>
               <br />
               <form onSubmit={onSignIn}>
                 <input
@@ -74,7 +75,6 @@ const SignIn = (props) => {
                   placeholder="Email"
                   onChange={handleChange}
                 />
-
                 <input
                   required
                   name="password"
