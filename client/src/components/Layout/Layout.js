@@ -1,5 +1,5 @@
 import "./Layout.css";
-import Nav from "../Nav/Nav";
+import Nav from '../Nav/ResponsiveAppBar';
 import Footer from "../Footer/Footer";
 
 const Layout = (props) => (
