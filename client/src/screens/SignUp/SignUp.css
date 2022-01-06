@@ -5,7 +5,10 @@ div .form-container {
   height: 100%;
   font-family: "Fjalla One";
   display: flex;
+  /* flex-direction: column; */
+  /* justify-content: center; */
 }
+
 div .left-side {
   left: 0;
   position: absolute;
@@ -15,7 +18,7 @@ div .left-side {
 }
 div .left-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   position: relative;
   margin: 10% auto;
@@ -52,6 +55,12 @@ form {
   display: flex;
   flex-direction: column;
 }
+
+div .text {
+  display: flex;
+  justify-content: center;
+}
+
 input {
   display: flex;
   justify-content: center;

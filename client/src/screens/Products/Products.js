@@ -5,7 +5,7 @@ import Layout from "../../components/Layout/Layout";
 import Search from "../../components/Search/Search";
 import Sort from "../../components/Sort/Sort";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
-import "./Products.css"
+import "./Products.css";
 
 const Products = (props) => {
   const [products, setProducts] = useState([]);
@@ -46,7 +46,6 @@ const Products = (props) => {
 
   const handleSearch = (event) => {
     const results = products.filter((product) => {
-
       if (event.target.value.length > -1) {
         return (
           product.style
@@ -64,9 +63,7 @@ const Products = (props) => {
           product.size
             .toLowerCase()
             .includes(event.target.value.toLowerCase()) ||
-          product.color
-            .toLowerCase()
-            .includes(event.target.value.toLowerCase())
+          product.color.toLowerCase().includes(event.target.value.toLowerCase())
         );
       }
     });
