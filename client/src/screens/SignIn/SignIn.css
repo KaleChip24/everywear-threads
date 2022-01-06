@@ -30,6 +30,7 @@ div .inner-box {
   max-height: 30%;
   justify-content: center;
 }
+
 div .right-side {
   display: flex;
   justify-content: flex-end;
@@ -47,6 +48,18 @@ img {
 form {
   display: block;
 }
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div .text {
+  display: flex;
+  justify-content: center;
+}
+
 input {
   display: flex;
   justify-content: center;
