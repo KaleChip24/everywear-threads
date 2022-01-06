@@ -3,25 +3,35 @@
   margin: 0;
   padding: 0; }
 
-body {
-  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/38816/image-from-rawpixel-id-2210775-jpeg.jpg") center center no-repeat;
-  background-size: cover;
-  width: 100vw;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-  justify-items: left; }
+ div .left-side { 
+  left: 0;
+  position: absolute;
+  background: white;  
+  width:50%;
+  height:100vh;
+  float:left;
+}
 
- .form-container { 
-  display: grid;
+
+div .inner-box {
+  display: block;
   background: #f8f4e5;
   padding: 50px 100px;
   border: 2px solid black;
   box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black; 
+  margin: 0 auto;
+  font-family: "Fjalla One";
 }
-.form-container h2,h3 {
-    font-family: "Fjalla One";
-    margin: 0 auto;
+div .right-side {
+   right: 0;
+   position: absolute;
+   width:50%;
+  height:100vh;
+  float:right;
+ }
+img {
+  max-width: 50vw;
+  max-height: 100vh;
 }
 form {
     display: block;
@@ -73,6 +83,4 @@ input:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
   transition: background-color 5000s ease-in-out 0s; }
 
-  img {
-      display: flex;
-  }
+
