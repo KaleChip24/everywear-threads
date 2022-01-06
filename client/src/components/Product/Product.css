@@ -1,3 +1,4 @@
+/*this effects the boxes on the products screen*/
 .product {
   display: flex;
   flex-direction: column;
@@ -9,13 +10,18 @@
   margin-bottom: 60px;
 }
 
+/*this effects the boxes on the products screen*/
 .product:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
 
+/*this changes the size of the images on the product
+details screen*/
 .product-image {
+  display: inline-flex;
   width: 300px;
+  margin: 3px;
 }
 
 .product-name {
