@@ -30,9 +30,6 @@ div .inner-box {
  justify-content: center;
 }
 div .right-side {
-   right: 0;
-   position: absolute;
-   width:50%;
    height:100vh;
  }
 img {
