@@ -1,40 +1,40 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 * {
   margin: 0;
-  padding: 0; }
-
- div .left-side { 
-  left: 0;
-  position: absolute;
-  background: white;  
-  width:50%;
-  height:100vh;
-  float:left;
+  padding: 0;
 }
 
+div .left-side {
+  left: 0;
+  position: absolute;
+  background: white;
+  width: 50%;
+  height: 100vh;
+  float: left;
+}
 
 div .inner-box {
   display: block;
   background: #f8f4e5;
   padding: 50px 100px;
   border: 2px solid black;
-  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black; 
+  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
   margin: 0 auto;
   font-family: "Fjalla One";
 }
 div .right-side {
-   right: 0;
-   position: absolute;
-   width:50%;
-  height:100vh;
-  float:right;
- }
+  right: 0;
+  position: absolute;
+  /* width: 50%; */
+  height: 100vh;
+  float: right;
+}
 img {
   max-width: 50vw;
   max-height: 100vh;
 }
 form {
-    display: block;
+  display: block;
 }
 input {
   display: block;
@@ -50,10 +50,17 @@ input {
   min-width: 250px;
   padding-left: 5px;
   outline: none;
-  color: black; }
+  color: black;
+}
 
 input:focus {
-  border-bottom: 5px solid #ffa580; }
+  border-bottom: 5px solid #ffa580;
+}
+
+right-side {
+  display: flex;
+  justify-content: flex-end;
+}
 
 button {
   display: block;
@@ -62,25 +69,26 @@ button {
   padding: 0 20px;
   background: #ffa580;
   letter-spacing: 2px;
-  transition: .2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
   outline: none;
   border: 1px solid black;
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
- }
-  button:hover {
-    background: black;
-    color: white;
-    border: 1px solid black; }
+}
+button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
 
 ::selection {
-  background: #ffc8ff; }
+  background: #ffc8ff;
+}
 
 input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus {
   border-bottom: 5px solid #95a4ff;
-  -webkit-text-fill-color: #2A293E;
+  -webkit-text-fill-color: #2a293e;
   -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
-  transition: background-color 5000s ease-in-out 0s; }
-
-
+  transition: background-color 5000s ease-in-out 0s;
+}
