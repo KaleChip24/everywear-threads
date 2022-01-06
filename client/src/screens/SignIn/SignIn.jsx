@@ -63,6 +63,7 @@ const SignIn = (props) => {
   const { email, password } = form;
 
   return (
+
 		<div>
 			<div id='form-container'>
 				<div id='left-side'>
@@ -112,6 +113,7 @@ const SignIn = (props) => {
 				</div>
 			</div>
 		</div>
+
   );
 };
 export default SignIn;

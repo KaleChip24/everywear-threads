@@ -1,44 +1,47 @@
 import { useState } from "react";
 import { signUp } from "../../services/users";
 import { useNavigate, Link } from "react-router-dom";
+
 import './SignUp.css';
 
+
 export default function SignUp(props) {
-	const navigate = useNavigate();
+  const navigate = useNavigate();
 
-	const [form, setForm] = useState({
-		username: '',
-		email: '',
-		passwordConfirmation: '',
-		isError: false,
-		errorMsg: '',
-	});
+  const [form, setForm] = useState({
+    username: "",
+    email: "",
+    passwordConfirmation: "",
+    isError: false,
+    errorMsg: "",
+  });
 
-	const handleChange = (event) =>
-		setForm({
-			...form,
-			[event.target.name]: event.target.value,
-		});
+  const handleChange = (event) =>
+    setForm({
+      ...form,
+      [event.target.name]: event.target.value,
+    });
 
-	const onSignUp = async (event) => {
-		event.preventDefault();
-		const { setUser } = props;
-		try {
-			const user = await signUp(form);
-			setUser(user);
-			navigate('/');
-		} catch (error) {
-			console.error(error);
-			setForm({
-				username: '',
-				email: '',
-				password: '',
-				passwordConfirmation: '',
-				isError: true,
-				errorMsg: 'Sign Up Details Invalid',
-			});
-		}
-	};
+  const onSignUp = async (event) => {
+    event.preventDefault();
+    const { setUser } = props;
+    try {
+      const user = await signUp(form);
+      setUser(user);
+      navigate("/");
+    } catch (error) {
+      console.error(error);
+      setForm({
+        username: "",
+        email: "",
+        password: "",
+        passwordConfirmation: "",
+        isError: true,
+        errorMsg: "Sign Up Details Invalid",
+      });
+    }
+  };
+
 
 	const renderError = () => {
 		const toggleForm = form.isError ? 'danger' : '';
@@ -60,7 +63,9 @@ export default function SignUp(props) {
 		}
 	};
 
-	const { username, email, password, passwordConfirmation } = form;
+
+  const { username, email, password, passwordConfirmation } = form;
+
 
 	return (
 		<div>
@@ -137,4 +142,5 @@ export default function SignUp(props) {
 			</div>
 		</div>
 	);
+
 }

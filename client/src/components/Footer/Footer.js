@@ -1,76 +1,54 @@
 import "./Footer.css";
-import { FiLinkedin } from "react-icons/fi"
-import { VscGithub } from "react-icons/vsc"
 
 const Footer = () => {
   return (
     <footer>
       <div className="team_links">
-        <div className="kale-links">
+        <div className="kale-link">
           <p>Kale</p>
           <a
+            className="gitHub"
             href="https://github.com/KaleChip24"
-            target="_blank"
-            rel="noreferrer">
-            <VscGithub></VscGithub>
+            target="blank"
+          >
+            <img
+              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
+              class="icons"
+              alt="GitHub"
+            />
           </a>
-          <a
-            href="https://www.linkedin.com/in/oharakale/"
-            target="_blank"
-            rel="noreferrer">
-            <FiLinkedin></FiLinkedin>
-
-          </a>
-        </div>
-        <div className="zhao-links">
           <p>Zhao</p>
           <a
             className="gitHub"
             href="https://github.com/iamzhaozhong"
-            target="_blank"
-            rel="noreferrer">
-            <VscGithub></VscGithub>
+            target="blank"
+          >
+            <img
+              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
+              class="icons"
+              alt="GitHub"
+            />
           </a>
-          <a className="linkdIn"
-            href="https://www.linkedin.com/in/junzhaozhongliu/"
-            target="_blank"
-            rel="noreferrer">
-            <FiLinkedin></FiLinkedin>
+          <p>Kaheem</p>
+          <a className="gitHub" href="https://github.com/kashfr" target="blank">
+            <img
+              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
+              class="icons"
+              alt="GitHub"
+            />
           </a>
-        </div>
-        <div className="lavell-links">
           <p>Lavell</p>
           <a
             className="gitHub"
-            href="https://github.com/lavell25"
-            target="_blank"
-            rel="noreferrer">
-            <VscGithub></VscGithub>
+            href="https://github.com/Lavell25"
+            target="blank"
+          >
+            <img
+              src="https://res.cloudinary.com/briandanger/image/upload/v1568954107/github_fpykxh.png"
+              class="icons"
+              alt="GitHub"
+            />
           </a>
-          <a className="linkdIn"
-            href="https://www.linkedin.com/in/lavellHCollins/"
-            target="_blank"
-            rel="noreferrer">
-            <FiLinkedin></FiLinkedin>
-          </a>
-        </div>
-        <div className="Kaheem-links">
-          <p>Kaheem</p>
-          <a
-            className="gitHub"
-            href="https://github.com/kashfr"
-            target="_blank"
-            rel="noreferrer">
-            <VscGithub></VscGithub>
-          </a>
-          <a className="linkdIn"
-            href="https://www.linkedin.com/in/kaheem-freeman-7b8b349b/"
-            target="_blank"
-            rel="noreferrer">
-            <FiLinkedin></FiLinkedin>
-          </a>
-        </div>
-        <div className="copyright-yr">
           <small>&copy; GA SEI Velvet Worms 2022</small>
         </div>
       </div>

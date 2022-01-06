@@ -10,6 +10,7 @@
   background: white;
   width: 50%;
   height: 100%;
+
 }
 
 #left-wrapper-sign-up{
@@ -43,6 +44,7 @@
   flex-direction: column;
   justify-content: center;
 }
+
 
 #sign-in-input {
   display: flex;
