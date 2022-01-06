@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./SignIn.css";
 import { signIn } from "../../services/users";
 import { useNavigate } from "react-router-dom";
-import Layout from '../../components/Layout/Layout';
+import Nav from '../../components/Nav/ResponsiveAppBar';
+import Footer from '../../components/Footer/Footer';
 
 const SignIn = (props) => {
 	const navigate = useNavigate();
@@ -54,33 +55,36 @@ const SignIn = (props) => {
 	const { email, password } = form;
 
 	return (
-		<Layout>
+		<div>
+			<Nav />
 			<div className='form-container'>
 				<div className='left-side'>
-					<div className='inner-box'>
-						<h2>Welcome Back!</h2>
-						<br />
-						<h3>Please sign in using your credentials.</h3>
-						<br />
-						<form onSubmit={onSignIn}>
-							<input
-								required
-								type='text'
-								name='email'
-								value={email}
-								placeholder='Email'
-								onChange={handleChange}
-							/>
-							<input
-								required
-								name='password'
-								value={password}
-								type='password'
-								placeholder='Password'
-								onChange={handleChange}
-							/>
-							{renderError()}
-						</form>
+					<div className='left-wrapper'>
+						<div className='inner-box'>
+							<h3>Welcome Back!</h3>
+							<h4>Please sign in using your credentials.</h4>
+							<br />
+							<form onSubmit={onSignIn}>
+								<input
+									required
+									type='text'
+									name='email'
+									value={email}
+									placeholder='Email'
+									onChange={handleChange}
+								/>
+
+								<input
+									required
+									name='password'
+									value={password}
+									type='password'
+									placeholder='Password'
+									onChange={handleChange}
+								/>
+								{renderError()}
+							</form>
+						</div>
 					</div>
 				</div>
 				<div className='right-side'>
@@ -90,8 +94,8 @@ const SignIn = (props) => {
 					/>
 				</div>
 			</div>
-		</Layout>
+			<Footer />
+		</div>
 	);
 };
-
 export default SignIn;
