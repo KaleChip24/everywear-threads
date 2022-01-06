@@ -41,69 +41,77 @@ const SignIn = (props) => {
   };
 
   const renderError = () => {
-    const toggleForm = form.isError ? "danger" : "";
-    if (form.isError) {
-      return (
-        <button type="submit" className={toggleForm}>
-          {form.errorMsg}
-        </button>
-      );
-    } else {
-      return <button type="submit">Sign In</button>;
-    }
+		const toggleForm = form.isError ? 'danger' : '';
+		if (form.isError) {
+			return (
+				<button
+					id='sign-in-button'
+					type='submit'
+					className={toggleForm}>
+					{form.errorMsg}
+				</button>
+			);
+		} else {
+			return (
+				<button id='sign-in-button' type='submit'>
+					Sign In
+				</button>
+			);
+		}
   };
 
   const { email, password } = form;
 
   return (
-    <div>
-      <Nav />
-      <div className="form-container">
-        <div className="left-side">
-          <div className="left-wrapper">
-            <div className="inner-box">
-              <h3>Welcome Back!</h3>
-              <h4>Please sign in using your credentials.</h4>
-              <br />
-              <form onSubmit={onSignIn}>
-                <input
-                  required
-                  type="text"
-                  name="email"
-                  value={email}
-                  placeholder="Email"
-                  onChange={handleChange}
-                />
-
-                <input
-                  required
-                  name="password"
-                  value={password}
-                  type="password"
-                  placeholder="Password"
-                  onChange={handleChange}
-                />
-                {renderError()}
-              </form>
-              <br />
-              <p className="sign-up">
-                <div className="text">Don't have an account?</div>
-                <Link to={`/sign-up`}>
-                  <button>Sign Up</button>
-                </Link>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div className="right-side">
-          <img
-            src="https://github.com/KaleChip24/everywear-threads/raw/development/assets/SignUp%2BSignIn%2BUpload/Login.png"
-            alt="signin"
-          />
-        </div>
-      </div>
-      <Footer />
-    </div>
+		<div>
+			<div id='form-container'>
+				<div id='left-side'>
+					<div id='left-wrapper'>
+						<h3>Welcome Back!</h3>
+						<h4>Please sign in using your credentials.</h4>
+						<br />
+						<form onSubmit={onSignIn}>
+							<input
+								id='sign-in-input'
+								required
+								type='text'
+								name='email'
+								value={email}
+								placeholder='Email'
+								onChange={handleChange}
+							/>
+							<input
+								id='sign-in-input'
+								required
+								name='password'
+								value={password}
+								type='password'
+								placeholder='Password'
+								onChange={handleChange}
+							/>
+							{renderError()}
+						</form>
+						<br />
+						<p id='sign-up-gateway'>
+							<div className='text'>Don't have an account?</div>
+							<br />
+							<Link to={`/sign-up`}>
+								<button id='sign-up-redirect-button'>
+									Sign Up
+								</button>
+							</Link>
+						</p>
+					</div>
+				</div>
+				<div id='right-side'>
+					<img
+						id='image-sign-in'
+						src='https://github.com/KaleChip24/everywear-threads/raw/development/assets/SignUp%2BSignIn%2BUpload/Login.png'
+						alt='signin'
+					/>
+				</div>
+			</div>
+		</div>
   );
 };
 export default SignIn;

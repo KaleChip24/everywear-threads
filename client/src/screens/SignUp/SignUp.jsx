@@ -1,9 +1,7 @@
 import { useState } from "react";
 import { signUp } from "../../services/users";
 import { useNavigate, Link } from "react-router-dom";
-import "./SignUp.css";
-import Nav from '../../components/Nav/ResponsiveAppBar';
-import Footer from '../../components/Footer/Footer';
+import './SignUp.css';
 
 export default function SignUp(props) {
 	const navigate = useNavigate();
@@ -46,27 +44,40 @@ export default function SignUp(props) {
 		const toggleForm = form.isError ? 'danger' : '';
 		if (form.isError) {
 			return (
-				<button type='submit' className={toggleForm}>
+				<button
+					id='sign-in-button'
+					type='submit'
+					className={toggleForm}>
 					{form.errorMsg}
 				</button>
 			);
 		} else {
-			return <button type='submit'>Sign Up</button>;
+			return (
+				<button id='sign-in-button' type='submit'>
+					Sign Up
+				</button>
+			);
 		}
 	};
 
 	const { username, email, password, passwordConfirmation } = form;
 
 	return (
-		<>
-			<Nav />
-			<div className='form-container'>
-				<div className='left-side'>
-					<div className='left-wrapper'>
+		<div>
+			<div id='form-container-sign-up'>
+				<div id='left-side-sign-up'>
+					<div id='left-wrapper-sign-up'>
 						<h3>Sign Up</h3>
+						<br />
+						<h4>
+							Welcome to your new fashion journey with Everywear
+							Thread! We are happy to have you here!
+						</h4>
+						<br />
 						<form onSubmit={onSignUp}>
 							<label>Username</label>
 							<input
+								id='sign-in-input'
 								required
 								type='text'
 								name='username'
@@ -76,6 +87,7 @@ export default function SignUp(props) {
 							/>
 							<label>Email address</label>
 							<input
+								id='sign-in-input'
 								required
 								type='email'
 								name='email'
@@ -85,6 +97,7 @@ export default function SignUp(props) {
 							/>
 							<label>Password</label>
 							<input
+								id='sign-in-input'
 								required
 								name='password'
 								value={password}
@@ -94,6 +107,7 @@ export default function SignUp(props) {
 							/>
 							<label>Password Confirmation</label>
 							<input
+								id='sign-in-input'
 								required
 								name='passwordConfirmation'
 								value={passwordConfirmation}
@@ -103,22 +117,24 @@ export default function SignUp(props) {
 							/>
 							{renderError()}
 						</form>
-						<p>
-							Already signed up?
-							<Link to={`/sign-in`}>
-								<button>Sign In</button>
-							</Link>
-						</p>
+						<br />
+						<p id='sign-in-gateway'>Already signed up?</p>
+						<br />
+						<Link to={`/sign-in`}>
+							<button id='sign-in-redirect-button'>
+								Sign In
+							</button>
+						</Link>
 					</div>
 				</div>
+				<div id='right-side-sign-up'>
+					<img
+						id='image-sign-up'
+						src='https://github.com/KaleChip24/everywear-threads/raw/zz-dev/assets/SignUp%2BSignIn%2BUpload/Sign-Up.png'
+						alt='signin'
+					/>
+				</div>
 			</div>
-			<div className='right-side'>
-				<img
-					src='https://github.com/KaleChip24/everywear-threads/raw/development/assets/SignUp%2BSignIn%2BUpload/Sign-Up.png'
-					alt='signin'
-				/>
-			</div>
-			<Footer />
-		</>
+		</div>
 	);
 }
