@@ -8,8 +8,8 @@ const Home = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="laning-page">
-        <ImgCarousel />
+      <ImgCarousel />
+      <div className="landing-page">
         <div className="blerb">
           <p>Fashion marketplace app centered around inclusivity and community. Buy, Sell, and discover preloved threads for everyone. <strong>Everywear</strong>.</p>
         </div>
