@@ -1,3 +1,14 @@
+.product-detail {
+ display: flex;
+ margin: 50px;
+
+}
+.details{
+  /* display: flex; */
+/* justify-content: flex-start; */
+  padding: 20px;
+}
+
 @media (max-width: 800px) {
   .product-detail-image {
     width: 300px;
