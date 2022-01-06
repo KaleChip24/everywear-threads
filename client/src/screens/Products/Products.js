@@ -5,6 +5,7 @@ import Layout from "../../components/Layout/Layout";
 import Search from "../../components/Search/Search";
 import Sort from "../../components/Sort/Sort";
 import { AZ, ZA, lowestFirst, highestFirst } from "../../utils/sort";
+import "./Products.css"
 
 const Products = (props) => {
   const [products, setProducts] = useState([]);

@@ -1,3 +1,9 @@
 /* .container {
   <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 } */
+
+@media (max-width: 500px) {
+  Carousel {
+    padding: 100px 40px;
+  }
+}

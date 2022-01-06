@@ -4,11 +4,20 @@
   }
 }
 
-p{
+/* .landing-page {
+  display: flex;
+} */
+ 
+.blerb {
+ 
+  margin-left: 80px;
+} 
+
+.landing-blerb{
+  background-color: white;
+  align-self: flex-end;
   padding: 20px;
   width: 300px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 1px #DEAAFF
 }
-
-/* home-btn {
-  align-self: flex-end;
-} */
