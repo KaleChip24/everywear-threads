@@ -4,6 +4,8 @@
   margin: 50px;
 }
 
+/*keeps the products from 
+spilling off the landing screen (contained)*/
 .cards {
   display: flex;
   overflow-x: scroll;
@@ -16,10 +18,11 @@
   border: 1px solid black;
   box-shadow: 5px 5px 1px #DEAAFF;
 }
-s
+
 .latest {
-  font-size: 20px;
-  color: rgb(56, 55, 55);
+  font-size: 40px;
+  color: #E5B3FE;
+  text-shadow: 2px 2px #070707;
   padding: 10px;
   margin-top: 40px;
 }

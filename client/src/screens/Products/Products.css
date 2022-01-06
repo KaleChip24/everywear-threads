@@ -1,15 +1,24 @@
-.products {
+/*adjusts images on the products screen*/
+.products img {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 40px;
+  height: 400px;
+}
+
+.card-layout{
+ /* flex-direction: row;
+ flex-wrap: wrap; */
+ width: 400px;
+  /* flex-flow: column wrap; */
+  /* justify-items: flex-start; */
 }
 
 .sort-container {
   display: flex;
-  width: 83.5vw;
-  justify-content: flex-end;
-  margin: 20px;
+  width: 80vw;
+  padding: 4px;
 }
 
 label {
@@ -20,6 +29,7 @@ label {
 }
 
 select {
+  /* background-color: black; */
   cursor: pointer;
   border: none;
   font-size: 18px;
