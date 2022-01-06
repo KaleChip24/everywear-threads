@@ -9,19 +9,20 @@ spilling off the landing screen (contained)*/
 .cards {
   display: flex;
   overflow-x: scroll;
+  flex-direction: row;
 }
 
-.cards img{
+.cards img {
   height: 300px;
   padding: 5px;
   margin: 8px;
   border: 1px solid black;
-  box-shadow: 5px 5px 1px #DEAAFF;
+  box-shadow: 5px 5px 1px #deaaff;
 }
 
 .latest {
   font-size: 40px;
-  color: #E5B3FE;
+  color: #e5b3fe;
   text-shadow: 2px 2px #070707;
   padding: 10px;
   margin-top: 40px;
