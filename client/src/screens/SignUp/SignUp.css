@@ -1,67 +1,52 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 
-div .form-container {
-  width: 100%;
-  height: 100%;
+#form-container-sign-up{
   font-family: "Fjalla One";
   display: flex;
-  /* flex-direction: column; */
-  /* justify-content: center; */
+  width: 100vw;
+  height:100vh;
 }
-
-div .left-side {
-  left: 0;
-  position: absolute;
+#left-side-sign-up {
   background: white;
   width: 50%;
-  height: 100vh;
+  height: 100%;
+
 }
-div .left-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  margin: 10% auto;
+
+#left-wrapper-sign-up{
+  width: 40%;
+  height: 60%;
   background: #f8f4e5;
   padding: 50px 100px;
   border: 2px solid black;
   box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
+  margin: 0 auto;
+  margin-top: 20%;
 }
-div .inner-box {
+
+#right-side-sign-up {
   display: flex;
-  flex-direction: column;
-  background: #f8f4e5;
-  padding: 50px 100px;
-  border: 2px solid black;
-  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
-  font-family: "Fjalla One";
-  max-width: 40%;
-  max-height: 30%;
-  justify-content: center;
-}
-div .right-side {
-  display: flex;
+  justify-content: flex-end;
   right: 0;
   position: absolute;
   width: 50%;
   height: 100vh;
-  justify-content: flex-end;
 }
-img {
+
+#image-sign-up {
   max-width: 50vw;
   max-height: 100vh;
 }
-form {
+
+
+#sign-in-gateway {
   display: flex;
   flex-direction: column;
-}
-
-div .text {
-  display: flex;
   justify-content: center;
 }
 
-input {
+
+#sign-in-input {
   display: flex;
   justify-content: center;
   margin: 0 auto;
@@ -78,11 +63,11 @@ input {
   color: black;
 }
 
-input:focus {
+#sign-in-input:focus {
   border-bottom: 5px solid #ffa580;
 }
 
-button {
+#sign-in-button {
   display: block;
   margin: 0 auto;
   line-height: 28pt;
@@ -94,21 +79,25 @@ button {
   border: 1px solid black;
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
 }
-
-button:hover {
+#sign-in-button:hover {
   background: black;
   color: white;
   border: 1px solid black;
 }
-::selection {
+
+#sign-in-input::selection {
   background: #ffc8ff;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  border-bottom: 5px solid #95a4ff;
-  -webkit-text-fill-color: #2a293e;
-  -webkit-box-shadow: 0 0 0px 1000px #f8f4e5 inset;
-  transition: background-color 5000s ease-in-out 0s;
+#sign-in-redirect-button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
 }
