@@ -51,6 +51,7 @@ const ProductCreate = (props) => {
             required
             onChange={handleChange}
           />
+          <div className="input-description">
           <input
             className="textarea-description"
             rows={10}
@@ -60,6 +61,7 @@ const ProductCreate = (props) => {
             required
             onChange={handleChange}
           />
+          </div>
           <input
             className="input-image-link"
             placeholder="Image 1"
