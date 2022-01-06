@@ -1,6 +1,6 @@
 .sort-container {
-  display: flex;
-  width: 83.5vw;
+  display:flex;
+  width: 200px;
   justify-content: flex-end;
   margin: 20px;
 }
@@ -15,8 +15,10 @@ label {
 select {
   cursor: pointer;
   border: none;
-  font-size: 18px;
+  font-size: 8px;
+  background-color: rgba(255, 255, 255, 0);
 }
+
 
 @media (max-width: 500px) {
   .sort-container {

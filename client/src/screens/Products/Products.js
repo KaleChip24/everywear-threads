@@ -83,23 +83,27 @@ const Products = (props) => {
 
   return (
     <Layout user={props.user}>
-      <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-      <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-      <div className="products">
-        {searchResult.map((product, index) => {
-          return (
-            <Product
-              _id={product._id}
-              item={product.item}
-              brand={product.brand}
-              price={product.price}
-              color={product.color}
-              descriprion={product.description}
-              imgURL={product.imgURL}
-              key={index}
-            />
-          );
-        })}
+      <div className="filters">
+        <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+        <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+      </div>
+      <div className="card-layout">
+        <div className="products">
+          {searchResult.map((product, index) => {
+            return (
+              <Product
+                _id={product._id}
+                item={product.item}
+                brand={product.brand}
+                price={product.price}
+                color={product.color}
+                descriprion={product.description}
+                imgURL={product.imgURL}
+                key={index}
+              />
+            );
+          })}
+        </div>
       </div>
     </Layout>
   );
