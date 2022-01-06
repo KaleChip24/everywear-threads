@@ -1,45 +1,59 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
 * {
   margin: 0;
   padding: 0;
 }
 
+
 div .left-side {
   left: 0;
   position: absolute;
+
   background: white;
   width: 50%;
   height: 100vh;
   float: left;
 }
 
+
 div .inner-box {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background: #f8f4e5;
   padding: 50px 100px;
   border: 2px solid black;
+
   box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
   margin: 0 auto;
+
   font-family: "Fjalla One";
+  max-width: 40%;
+  max-height:30%;
+ justify-content: center;
 }
 div .right-side {
+
   right: 0;
   position: absolute;
   /* width: 50%; */
   height: 100vh;
   float: right;
 }
+
 img {
   max-width: 50vw;
   max-height: 100vh;
 }
 form {
+
   display: block;
+
 }
 input {
-  display: block;
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
-  width: 100%;
   font-size: 14pt;
   line-height: 28pt;
   font-family: "Fjalla One";
@@ -47,7 +61,7 @@ input {
   border: none;
   border-bottom: 5px solid black;
   background: #f8f4e5;
-  min-width: 250px;
+  max-width: 250px;
   padding-left: 5px;
   outline: none;
   color: black;
@@ -73,12 +87,14 @@ button {
   outline: none;
   border: 1px solid black;
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+
 }
 button:hover {
   background: black;
   color: white;
   border: 1px solid black;
 }
+
 
 ::selection {
   background: #ffc8ff;
