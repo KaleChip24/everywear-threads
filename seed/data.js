@@ -151,7 +151,7 @@ const insertData = async () => {
       price: "109.95",
       item: "Sweater",
       size: "Large",
-      style: "Outerwear",
+      style: "Vintage",
       color: "Green",
       brand: "Houndstooth",
       description: "Something corny and cliche",
@@ -165,7 +165,7 @@ const insertData = async () => {
       price: "49.99",
       item: "Sweater",
       size: "Large",
-      style: "Vintage Sweater",
+      style: "Vintage",
       color: "Olive Green",
       brand: "Redgray",
       description:
@@ -180,7 +180,7 @@ const insertData = async () => {
       price: "53",
       item: "Jacket",
       size: "Large",
-      style: "Varsity Jacket",
+      style: "Outerwear",
       color: "Blue",
       brand: "Hysterics",
       description:
@@ -195,7 +195,7 @@ const insertData = async () => {
       price: "69",
       item: "Jacket",
       size: "Extra-Large",
-      style: "Varsity Jacket",
+      style: "Outerwear",
       color: "Black",
       brand: "Avdiaiy",
       description:
@@ -206,7 +206,248 @@ const insertData = async () => {
         "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-22239101225.jpg",
       ],
     },
+    {
+      price: "69",
+      item: "Jacket",
+      size: "Extra-Large",
+      style: "Outerwear",
+      color: "Black",
+      brand: "Avdiaiy",
+      description:
+        "Wanna dress like a Jock without actually being one? You have to buy this jacket to impress the cheerleaders!",
+      imgURL: [
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-222387603.jpg",
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-222327608.jpg",
+        "https://cdnimg.emmiol.com/E/202111/img_original-QBK0211OU-22239101225.jpg",
+      ],
+    },
+    {
+      price: "12",
+      item: "Ring",
+      size: "ONE SIZE",
+      style: "Accesory",
+      color: "Silver",
+      brand: "Demon",
+      description:
+        "Wear this Demon Ring if you want to add a little flair to your outfit",
+      imgURL: [
+        'https://cdnimg.emmiol.com/E/202111/img_original-JBK0193AC-220032517.jpg',
+        'https://cdnimg.emmiol.com/E/202111/img_original-JBK0193AC-2200912032.jpg',
+        'https://cdnimg.emmiol.com/E/202111/img_original-JBK0193AC-220098602.jpg'
+      ],
+    },
+    {
+      price: "9",
+      item: "Ring",
+      size: "ONE SIZE",
+      style: "Accesory",
+      color: "Silver",
+      brand: "Funky Brewster",
+      description:
+        "Wear this Demon Ring if you want to add a little flair to your outfit",
+      imgURL: [
+        'https://cdnimg.emmiol.com/E/202110/img_original-JBJ0120AC-2000973512.jpg',
+        'https://cdnimg.emmiol.com/E/202110/img_original-JBJ0120AC-200097841.jpg'
+      ],
+    },
+    {
+      price: "16.99",
+      item: "Ring",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Gold",
+      brand: "Funky Brewster",
+      description:
+        "Do you wanna emcompass both sides of the same coin",
+      imgURL: [
+        'https://cdnimg.emmiol.com/E/202106/img_original-JBF0169AC-250089627.jpg',
+        'https://cdnimg.emmiol.com/E/202106/img_original-JBF0169AC-2500409123.jpg'
+      ],
+    },
+    {
+      price: "14.99",
+      item: "Ring",
+      size: "ONE SIZE",
+      style: "Accesory",
+      color: "Gold",
+      brand: "Funky Brewster",
+      description:
+        "Buy this ring and give the other one to your partner so that you two will never be apart. ",
+        imgURL: [
+          'https://cdnimg.emmiol.com/E/202111/img_original-CBK0377AC-1621873122.jpg',
+          'https://cdnimg.emmiol.com/E/202111/img_original-CBK0377AC-1621610579.jpg',
+          'https://cdnimg.emmiol.com/E/202111/img_original-CBK0377AC-1621731008.jpg'
+        ],
+    },
+    {
+      price: "69.99",
+      item: "Sun Glasses",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Black",
+      brand: "Eyevan",
+      description:
+        "Yoko ono once owned a pair of these. Need I say more. ",
+        imgURL: [
+          'https://cdn.shopify.com/s/files/1/0049/9112/products/EYEVAN7285LUBINYTBKOS_01_2048x2048.jpg?v=1629139193',
+          'https://cdn.shopify.com/s/files/1/0049/9112/products/EYEVAN_7285_LUBIN_YT_BK_OS_02_2048x2048.jpg?v=1629139083',
+        ],
+    },
+    {
+      price: "49.99",
+      item: "Sun Glasses",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Yellow",
+      brand: "Eyevan",
+      description:
+      "Need a bit a color! Buy these stunning frames to give you the confidence you need to walk into any party like a Boss!. ",
+      imgURL: [
+        'https://cdn.shopify.com/s/files/1/0049/9112/products/RETROSUPERFUTUREDREWHOTYELLOWOSI9CO_2_2048x2048.jpg?v=1619644357',
+        'https://cdn.shopify.com/s/files/1/0049/9112/products/RETROSUPERFUTUREDREWHOTYELLOWOSI9CO_2_2048x2048.jpg?v=1619644357',
+        'https://cdn.shopify.com/s/files/1/0049/9112/products/RETROSUPERFUTUREDREWHOTYELLOWOSI9CO_4_2048x2048.jpg?v=1619644521'
+      ],
+    },
+    {
+      price: "21",
+      item: "Hat",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Beige",
+      brand: "B.A.R.",
+      description:
+      "Let everyone know you're a reddit conspricay theorist. ",
+      imgURL: [
+        'https://cdn.shopify.com/s/files/1/0011/3013/5596/products/buckethat2_1100x.png?v=1596663668',
+        'https://cdn.shopify.com/s/files/1/0011/3013/5596/products/buckethat3_1100x.png?v=1596663758',
+        'https://cdn.shopify.com/s/files/1/0011/3013/5596/products/buckethatsquare1_1100x.png?v=1596664458',
+      ],
+    },
+    {
+      price: "22.39",
+      item: "Hat",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Red",
+      brand: "SoUnFunny",
+      description:
+      "Never forget that a woman once chose a Bee over a man. So BEE COOL. ",
+      imgURL: [
+        'https://i.etsystatic.com/16208149/r/il/625ea2/1699454050/il_794xN.1699454050_mxs2.jpg',
+        'https://i.etsystatic.com/16208149/r/il/69f85b/1699454052/il_794xN.1699454052_1oyq.jpg',
+        'https://i.etsystatic.com/16208149/r/il/4b4769/1699454064/il_794xN.1699454064_rdhh.jpg'
+      ],
+    },
+    {
+      price: "11.29",
+      item: "Hat",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Green",
+      brand: "SoUnFunny",
+      description:
+      "Just a Hat with a duck on it.",
+      imgURL: [
+        'https://img.ltwebstatic.com/images3_pi/2021/08/31/16303411089d4e3013a266790258f64456ffae143a_thumbnail_600x.webp',
+        'https://img.ltwebstatic.com/images3_pi/2021/08/31/16303411160505d1cd447815fc689b45582a79590e_thumbnail_600x.webp',
+        'https://img.ltwebstatic.com/images3_pi/2021/08/31/1630341110ffcd67723936f48df346a27732e8bf2f_thumbnail_600x.webp',
+      ],
+    },
+    {
+      price: "368.99",
+      item: "Dress",
+      size: "Medium",
+      style: "Vintage",
+      color: "Sheer",
+      brand: "Rosamosario",
+      description:
+      "Buy this if you're planning on attending the MET Gala.",
+      imgURL: [
+        'https://cdna.lystit.com/520/650/n/photos/rosamosario/1011b056/rosamosario-Black-La-Moglie-Di-Zorro-Skirt.jpeg',
+        'https://cdna.lystit.com/520/650/n/photos/rosamosario/0bfc69b4/rosamosario-Black-La-Moglie-Di-Zorro-Skirt.jpeg',
+        'https://cdna.lystit.com/520/650/n/photos/rosamosario/0e0c5dfb/rosamosario-Black-La-Moglie-Di-Zorro-Skirt.jpeg'
+      ],
+    },
+    {
+      price: "72.99",
+      item: "Dress",
+      size: "Medium",
+      style: "Vintage",
+      color: "Grey",
+      brand: "Emmy's",
+      description:
+      "Wear this and feel like you're listening to Ocean Avenue.",
+      imgURL: [
+        'https://images.urbndata.com/is/image/FreePeople/63076459_020_c/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540',
+        'https://images.urbndata.com/is/image/FreePeople/63076459_020_a/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540',
+        'https://images.urbndata.com/is/image/FreePeople/63076459_020_0/?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540',
+      ],
+    },
+    {
+      price: "64.99",
+      item: "Dress",
+      size: "Medium",
+      style: "Vintage",
+      color: "Grey",
+      brand: "Svitla",
+      description:
+      ' "Siri, play Phil Gerus Time & Again" ',
+      imgURL: [
+        'https://i.etsystatic.com/21015833/r/il/b22aa1/2093299588/il_794xN.2093299588_buze.jpg',
+        'https://i.etsystatic.com/21015833/r/il/7473e9/2140856605/il_794xN.2140856605_6kan.jpg',
+        'https://i.etsystatic.com/21015833/r/il/7498c8/2027778274/il_794xN.2027778274_8eka.jpg',
+      ],
+    },
+    {
+      price: "64.99",
+      item: "Dress",
+      size: "Medium",
+      style: "Vintage",
+      color: "Grey",
+      brand: "Svitla",
+      description:
+      ' "Siri, play Phil Gerus Time & Again" ',
+      imgURL: [
+        'https://i.etsystatic.com/6651790/r/il/d63d98/3379976381/il_794xN.3379976381_34xq.jpg',
+
+        'https://i.etsystatic.com/21015833/r/il/b22aa1/2093299588/il_794xN.2093299588_buze.jpg',
+        'https://i.etsystatic.com/21015833/r/il/7473e9/2140856605/il_794xN.2140856605_6kan.jpg',
+        'https://i.etsystatic.com/21015833/r/il/7498c8/2027778274/il_794xN.2027778274_8eka.jpg',
+      ],
+    },
+    {
+      price: "45.99",
+      item: "Earrings",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Gold",
+      brand: "Milky Way",
+      description:
+      "Accessories are everyones best friend.",
+      imgURL: [
+        'https://cdn.shopify.com/s/files/1/0764/4005/products/06-13-19-12_1800x1800.jpg?v=1605475063',
+        'https://cdn.shopify.com/s/files/1/0764/4005/products/GCER46-4_1800x1800.jpg?v=1605471936',
+        'https://cdn.shopify.com/s/files/1/0764/4005/products/GCER46-1_1800x1800.jpg?v=1605477552'
+      ],
+    },
+    {
+      price: "45.99",
+      item: "Earrings",
+      size: "ONE SIZE",
+      style: "Accessory",
+      color: "Gold",
+      brand: "Milky Way",
+      description:
+      "Accessories are everyones best friend.",
+      imgURL: [
+        'https://cdn.shopify.com/s/files/1/2065/2523/products/v--1049106525__1049417171_550x528.jpg?v=1514281433',
+        'https://cdn.shopify.com/s/files/1/2065/2523/products/Women-Earrings-Unique-Natural-Druzy-Dangle-Earrings-Designer-Bohemian-Earrings-US-European-Drusy-Jewelry-Dropshipping_058798e7-9bd5-426e-8ed8-32f4577c231b_514x440.jpg?v=1514281433',
+        'https://cdn.shopify.com/s/files/1/2065/2523/products/v--1144439664__1602033037_527x476.jpg?v=1514281433'
+      ],
+    },
   ];
+
+
 
   await Product.insertMany(products);
   console.log("Created product!");
