@@ -3,6 +3,7 @@ import './ProductDetail.css';
 import Layout from '../../components/Layout/Layout';
 import { getProduct, deleteProduct } from '../../services/products';
 import { useParams, Link, Navigate } from 'react-router-dom';
+import DetailsCarousel from '../../components/DetailsCarousel/DetailsCarousel';
 
 const ProductDetail = (props) => {
   const [product, setProduct] = useState(null);
@@ -36,35 +37,52 @@ const ProductDetail = (props) => {
   return (
     <Layout>
       <div className='product-detail'>
-        {product.imgURL.map((image) => {
-          return (
-            <img className="product-image" src={image} alt={props.imgURL}></img>
-          );
-        })}
-        <div className='detail'>
-          <div className='item'>{product.item}</div>
-          <div className='price'>Price: {`${product.price}`}</div>
-          <div className='item'>Size: {product.size}</div>
-          <div className='item'>Style: {product.style}</div>
-          <div className='brand'>Brand: {product.brand}</div>
-          <div className='description'>Product Description: {product.description}</div>
-          <div className='color'>Color: {product.color}</div>
-          <div className='button-container'>
-            <button className='edit-button'>
-              <Link
-                className='edit-link'
-                to={`/products/${product._id}/edit`}
-              >
-                Edit
-              </Link>
-            </button>
-            <button
-              className='delete-button'
-              onClick={handleSubmit}
+        {/* <DetailsCarousel /> */}
+        <div className="details-imgs">
+          {product.imgURL.map((image, id) => {
+            return (
+              <img className="product-image" src={image} alt={props.imgURL}></img>
+            );
+          })}
+        </div>
+        <table className='details'>
+          <tr className='item'>
+            <th scope="row">{product.item}</th>
+            <th scope="row">${product.price}</th>
+          </tr>
+          <tr className='size'>
+            <th scope="row">Size:</th>
+            <td>{product.size}</td>
+          </tr>
+          <tr className='style'>
+            <th scope="row">Style:</th>
+            <td>{product.style}</td>
+          </tr>
+          <tr className='brand'>
+            <th scope="row">Brand:</th>
+            <td>{product.brand}</td>
+          </tr>
+          <tr className='color'>
+            <th scope="row">Color:</th>
+            <td>{product.color}</td>
+          </tr>
+        </table>
+        <p>Product Description: {product.description}</p>
+        <div className='button-container'>
+          <button className='edit-button'>
+            <Link
+              className='edit-link'
+              to={`/products/${product._id}/edit`}
             >
-              Delete
-            </button>
-          </div>
+              Edit
+            </Link>
+          </button>
+          <button
+            className='delete-button'
+            onClick={handleSubmit}
+          >
+            Delete
+          </button>
         </div>
       </div>
     </Layout>
