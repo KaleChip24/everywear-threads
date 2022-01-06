@@ -10,7 +10,7 @@ const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     item: "",
     description: "",
-    imgURL: [],
+    imgURL: "",
     price: "",
     brand: "",
     size: "",
@@ -28,12 +28,19 @@ const ProductEdit = (props) => {
     fetchProduct();
   }, [id]);
 
-  const handleChange = (event) => {
-    const { name, value } = event.target;
-    setProduct({
-      ...product,
-      [name]: value,
-    });
+  const handleChange = (e) => {
+    const { name, value, id } = e.target;
+    if (name === "imgURL") {
+      const updatedProduct = { ...product }
+      updatedProduct.imgURL[id] = value
+      setProduct(updatedProduct)
+    }
+    else {
+      setProduct({
+        ...product,
+        [name]: value,
+      });
+    }
   };
 
   const handleSubmit = async (event) => {
@@ -52,14 +59,33 @@ const ProductEdit = (props) => {
             alt={product.item}
           />
           <form onSubmit={handleSubmit}>
-            <input
-              className="edit-input-image-link"
-              placeholder="Image Link"
-              value={product.imgURL}
-              name="imgURL"
-              required
-              onChange={handleChange}
-            />
+          <input
+            className="edit-input-image-link"
+            placeholder="Image 1"
+            value={props.imgURL}
+            name="imgURL"
+            id="0"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="edit-input-image-link"
+            placeholder="Image "
+            value={props.imgURL}
+            name="imgURL"
+            id="1"
+            required
+            onChange={handleChange}
+          />
+          <input
+            className="edit-input-image-link"
+            placeholder="Image 1"
+            value={props.imgURL}
+            name="imgURL"
+            id="2"
+            required
+            onChange={handleChange}
+          />
           </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
