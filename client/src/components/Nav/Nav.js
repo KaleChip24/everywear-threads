@@ -24,30 +24,23 @@ const unauthenticatedOptions = (
   </>
 );
 
-const alwaysOptions = (
-  <>
-    <NavLink className="link" to="/products">
-      Products
-    </NavLink>
-  </>
-);
 
 const Nav = ({ user }) => {
-  return (
-    <nav>
-      <ResponsiveAppBar />
-      <div className="nav">
-        <NavLink className="logo" to="/">
-          Everywear Threads
-        </NavLink>
-        <div className="links">
-          {user && <div className="link welcome">Bonjour, {user.username}</div>}
-          {alwaysOptions}
-          {user ? authenticatedOptions : unauthenticatedOptions}
-        </div>
-      </div>
-    </nav>
-  );
+	return (
+		<nav>
+			<div className='nav'>
+				<ResponsiveAppBar />
+				<div className='links'>
+					{user && (
+						<div className='link welcome'>
+							Bonjour, {user.username}
+						</div>
+					)}
+					{user ? authenticatedOptions : unauthenticatedOptions}
+				</div>
+			</div>
+		</nav>
+	);
 };
 
 export default Nav;

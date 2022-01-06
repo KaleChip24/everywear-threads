@@ -15,12 +15,28 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 
-const pages = ["Products", "Pricing", "Blog", "Home", "Sign-In", "Sign-Up"];
-const settings = ["Profile", "Account", "Dashboard", "Logout"];
+const authenticated = ['Products', 'Add Product', 'Sign-Out'];
+const unauthenticatedOptions = ['Products', 'Sign-In', 'Sign-Up'];
+const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
+const Nav = ({ user }) => {
+	return (
+		<nav>
+			<div className='links'>
+				{user && (
+					<div className='link welcome'>Bonjour, {user.username}</div>
+				)}
+				{user ? (
+					<ResponsiveAppBar options={authenticated} />
+				) : (
+					<ResponsiveAppBar options={unauthenticatedOptions} />
+				)}
+			</div>
+		</nav>
+	);
+};
 
-
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = ({ options }) => {
 	const [anchorElNav, setAnchorElNav] = React.useState(null);
 	const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -45,6 +61,7 @@ const ResponsiveAppBar = () => {
 			sx={{
 				backgroundColor: '#c8e7ff',
 				maxHeight: '20vh',
+				paddingBottom: '5%',
 			}}>
 			<Container maxWidth='xl'>
 				<Toolbar disableGutters>
@@ -52,7 +69,7 @@ const ResponsiveAppBar = () => {
 					<Container maxWidth='sm'>
 						<Box>
 							<CardActions>
-								<NavLink to='/Home'>
+								<NavLink to='/'>
 									<CardMedia
 										style={{
 											height: 'auto',
@@ -67,7 +84,6 @@ const ResponsiveAppBar = () => {
 							</CardActions>
 						</Box>
 					</Container>
-
 					<Box
 						sx={{
 							flexGrow: 1,
@@ -99,7 +115,7 @@ const ResponsiveAppBar = () => {
 							sx={{
 								display: { xs: 'block', md: 'none' },
 							}}>
-							{pages.map((page) => (
+							{options.map((page) => (
 								<CardActions>
 									<MenuItem
 										key={page}
@@ -127,7 +143,7 @@ const ResponsiveAppBar = () => {
 							flexGrow: 1,
 							display: { xs: 'none', md: 'flex' },
 						}}>
-						{pages.map((page) => (
+						{options.map((page) => (
 							<CardActions>
 								<Button
 									component={NavLink}
@@ -188,4 +204,5 @@ const ResponsiveAppBar = () => {
 		</AppBar>
 	);
 };
-export default ResponsiveAppBar;
+
+export default Nav;
