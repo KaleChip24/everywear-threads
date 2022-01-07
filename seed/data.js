@@ -22,13 +22,13 @@ const insertData = async () => {
 
   const products = [
     {
-      price: "29.95",
+      price: "72.95",
       item: "T-Shirt",
-      size: "Medium",
+      size: "Small",
       style: "Streetwear",
       color: "White",
       brand: "Dior",
-      description: "Something corny and cliche",
+      description: "Dress to impress with this fresh Dior shirt. Did you catch the rhyme?",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item15/IMG_0212.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item15/IMG_0213.JPG",
@@ -36,9 +36,9 @@ const insertData = async () => {
       ],
     },
     {
-      price: "39.95",
+      price: "89.95",
       item: "T-Shirt",
-      size: "Extra-Large",
+      size: "Small",
       style: "T-Shirt",
       color: "Black",
       brand: "Balmain",
@@ -50,13 +50,13 @@ const insertData = async () => {
       ],
     },
     {
-      price: "64.99",
+      price: "109.99",
       item: "Sweater",
       size: "Extra-Large",
       style: "Streetwear",
       color: "Black",
       brand: "Dior",
-      description: "Something corny and cliche",
+      description: "Shock the world with this Dior Sweater",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item13/IMG_0222.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item13/IMG_0224.JPG",
@@ -64,13 +64,13 @@ const insertData = async () => {
       ],
     },
     {
-      price: "219.99",
+      price: "349.99",
       item: "Jacket",
       size: "Large",
       style: "Outerwear",
       color: "Black",
       brand: "YSL",
-      description: "Something corny and cliche",
+      description: "The coat is a modern and refined variation of a timeless design. Crafted in blue wool and mohair canvas it is embellished with a white cotton faille contrasting overlay in the back. Its single-breasted classic fit is further enhanced by topstitching details and hallmark fabric-covered buttons. The contemporary style will embellish any of the season's outfits.",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item12/IMG_0230.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item12/IMG_0231.JPG",
@@ -78,14 +78,14 @@ const insertData = async () => {
       ],
     },
     {
-      price: "69.99",
+      price: "129.99",
       item: "Belt",
       size: "32 in",
       style: "Accessory",
       color: "Grey",
       brand: "Louis Vuitton",
       description:
-        "Want to make your outfit POP! Wear this and recieve compliments all evening long.",
+        "This reversible belt associates the iconic LV Initiales buckle in dark ruthenium with our new Monogram Eclipse canvas. Subtly branded, it is a perfect match for the Maison's leather goods and shoes.",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/8ead015efa6e546798ca53ae913673d90e69a8a4/assets/inventory/item1/IMG_0173.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/8ead015efa6e546798ca53ae913673d90e69a8a4/assets/inventory/item1/IMG_0174.JPG",
@@ -93,13 +93,13 @@ const insertData = async () => {
       ],
     },
     {
-      price: "79.95",
+      price: "179.95",
       item: "Shoes",
       size: "10.5",
       style: "Shoes",
       color: "Black",
       brand: "Celine",
-      description: "Something corny and cliche",
+      description: "Celine drugstore derbies in shiny calfskin with rounded toe.",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item3/IMG_0166.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item3/IMG_0167.JPG",
@@ -107,13 +107,13 @@ const insertData = async () => {
       ],
     },
     {
-      price: "89.95",
+      price: "119.95",
       item: "Jacket",
       size: "Extra-Large",
       style: "Outerwear",
       color: "Black",
       brand: "Celine",
-      description: "Something corny and cliche",
+      description: "Athletic teddy souvenir in satin.",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item4/IMG_0184.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item4/IMG_0185.JPG",
@@ -121,13 +121,13 @@ const insertData = async () => {
       ],
     },
     {
-      price: "39.95",
+      price: "89.95",
       item: "Shirt",
       size: "Small",
       style: "T-Shirt",
       color: "White",
-      brand: "YSL",
-      description: "Something corny and cliche",
+      brand: "Amiri",
+      description: "100% cotton and made in France. You're mostly paying for the airfare of this shirt.",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item10/IMG_0244.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item10/IMG_0245.JPG",
@@ -139,8 +139,8 @@ const insertData = async () => {
       size: "Large",
       style: "Outerwear",
       color: "Green",
-      brand: "YSL",
-      description: "Something corny and cliche",
+      brand: "Grandfather",
+      description: "This jacket is made with 100% recycled foreskin. Less waste in the world. More great clothes for you.",
       imgURL: [
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item11/IMG_0236.JPG",
         "https://raw.githubusercontent.com/KaleChip24/everywear-threads/zz-dev/assets/inventory/item11/IMG_0237.JPG",
@@ -154,7 +154,7 @@ const insertData = async () => {
       style: "Vintage",
       color: "Green",
       brand: "Houndstooth",
-      description: "Something corny and cliche",
+      description: "This screams I wear my Granddads clothes. ",
       imgURL: [
         "https://cdnimg.emmiol.com/E/202109/img_original-FBI0108TO-0820971284.jpg",
         "https://cdnimg.emmiol.com/E/202109/img_original-FBI0108TO-0820612792.jpg",
