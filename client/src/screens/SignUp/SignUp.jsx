@@ -65,12 +65,14 @@ export default function SignUp(props) {
 			<div id='form-container-sign-up'>
 				<div id='left-side-sign-up'>
 					<div id='left-wrapper-sign-up'>
-						<h3>Sign Up</h3>
-						<br />
-						<h4>
-							Welcome to your new fashion journey with Everywear
-							Threads! We are happy to have you here!
-						</h4>
+						<div>
+							<h3>Sign Up</h3>
+							<p>
+								Welcome to your new fashion journey with
+								Everywear Threads!
+							</p>
+							<p>We are happy to have you here.</p>
+						</div>
 						<br />
 						<form onSubmit={onSignUp}>
 							<input

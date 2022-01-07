@@ -1,9 +1,11 @@
 @media (max-width: 500px) {
-  .home {
+.home {
     padding: 100px 40px;
   }
 }
-
+#home {
+  display: inline-block;
+}
 .blerb {
   margin-left: 80px;
 }

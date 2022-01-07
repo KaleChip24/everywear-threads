@@ -3,22 +3,26 @@ div .products img {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   padding: 40px;
   height: 400px;
 }
-
+div .price {
+  text-align: center;
+}
 div .card-layout {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   width: 400px;
-  justify-content: space-around;
+  justify-content: space-between;
   /* flex-flow: column wrap; */
   /* justify-items: flex-start; */
 }
-
-.filters {
+div #product-card.card-layout {
+  display: flex;
+  flex-direction: row;
+}
+#home-filter {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -31,6 +35,7 @@ div .sort-container {
   flex-direction: row;
   justify-content: flex-end;
   width: 80vw;
+  margin-left: 10%;
   padding: 4px;
 }
 
@@ -47,7 +52,25 @@ select {
   border: none;
   font-size: 18px;
 }
-
+#product-card {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+#home-wrapper {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+#footer-div {
+  max-width: 100vw;
+  position: block;
+  margin-bottom: 0vh auto;
+}
+footer{
+  width: 100vw;
+}
 @media (max-width: 500px) {
   .products {
     width: 100%;
