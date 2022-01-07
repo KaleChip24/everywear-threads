@@ -4,17 +4,12 @@
   flex-direction: column;
 }
 
-.layout-children {
+/* .layout-children {
   flex: 2;
   padding: 100px;
   justify-content: center;
-}
-
-/* Footer {
-  width: 100vw;
-  position: relative;
-  margin-top: 90vh;
 } */
+
 
 @media (max-width: 500px) {
   .layout {
