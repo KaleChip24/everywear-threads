@@ -22,7 +22,9 @@ details screen*/
 .product-image {
   display: inline-flex;
   width: 300px;
-  margin: 3px;
+  margin: 5px;
+  border: 2px solid;
+  box-shadow: 3px 3px #e5b3fe;
 }
 
 .product-name {

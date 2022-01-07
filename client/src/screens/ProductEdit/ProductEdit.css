@@ -1,3 +1,29 @@
+.product-edit {
+display: flex;  
+align-items: center;
+margin: 40px;
+}
+
+#edit-img{
+  height: 300px;
+  border: 2px solid;
+  padding:10px;
+  margin: 10px;
+}
+
+.save-btn{
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
 @media (max-width: 500px) {
   .input-name {
     margin-left: -10px;
@@ -21,4 +47,11 @@
   .edit-product-image {
     width: 300px;
   }
+}
+
+#edit-img{
+  height: 300px;
+  border: 2px solid;
+  padding:10px;
+  margin: 10px;
 }
