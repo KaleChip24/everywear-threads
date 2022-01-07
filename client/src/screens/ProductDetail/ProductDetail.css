@@ -1,12 +1,21 @@
-.product-detail {
- display: flex;
+.details {
+ flex-direction: column;
+ width: 500px;
+ height: 300px;
  margin: 50px;
-
+ padding: 20px;
+border: 2px solid black;
+box-shadow: 5px 5px #C0FDFF;
 }
-.details{
-  /* display: flex; */
-/* justify-content: flex-start; */
-  padding: 20px;
+
+th {
+  display: flex;
+  align-self: flex-start;
+ border-top: 1px solid black;
+}
+td {
+  margin-top: 5px;
+  display: flex;
 }
 
 @media (max-width: 800px) {
