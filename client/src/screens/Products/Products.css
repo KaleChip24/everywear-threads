@@ -1,7 +1,8 @@
-/* .products-container{
-  display: flex;
-  flex-direction: column;
-} */
+.product{
+  border: 2px solid;
+  box-shadow: 4px 4px #E5B3FE;
+  max-width: 400px;
+}
 
 .products, .products-container{
   display: flex;
