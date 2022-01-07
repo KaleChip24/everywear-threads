@@ -8,7 +8,7 @@
 }
 
 
-div .form-container {
+#form-container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -16,7 +16,7 @@ div .form-container {
   justify-content: space-between;
 }
 
-div .left-side {
+#left-side {
   left: 0;
   position: absolute;
   background: white;

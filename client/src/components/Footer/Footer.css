@@ -7,16 +7,17 @@
 } */
 footer {
   padding: 15px 5px 0px 5px;
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #713fb1;
+  height: 300px;
+  background-image: linear-gradient(to bottom right, #DEAAFF, #C0FDFF);
 }
 
 footer a {
   margin: 5px;
-  color: #DEAAFF;
+  color: #ffaafc;
   transition: all 0.2s ease-in-out;
 }
 footer a:hover {
@@ -32,9 +33,12 @@ footer p {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px #07070784
 }
 
 .copyright-yr {
   margin-top: 25px;
   color: #DEAAFF;
+  text-shadow: 1px 1px #070707
 }
