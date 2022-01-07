@@ -128,7 +128,7 @@ export default function SignUp(props) {
 				<div id='right-side-sign-up'>
 					<img
 						id='image-sign-up'
-						src='https://zhaozhong.mo.cloudinary.net/Login.png'
+						src='https://github.com/KaleChip24/everywear-threads/raw/zz-dev/assets/SignUp%2BSignIn%2BUpload/Sign-Up.png'
 						alt='signin'
 					/>
 				</div>
