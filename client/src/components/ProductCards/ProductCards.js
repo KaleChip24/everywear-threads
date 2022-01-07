@@ -18,7 +18,7 @@ const ProductCards = () => {
   const CARDS = products
     .reverse()
     .map((product, index) =>
-      index < 20 ? (
+      index < 10 ? (
         <ProductCard
           _id={product._id}
           name={product.name}

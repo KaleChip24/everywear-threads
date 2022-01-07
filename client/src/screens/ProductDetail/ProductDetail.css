@@ -56,7 +56,20 @@ td {
   border: 1px solid black;
   box-shadow: 4px 4px 1px #c0fdff, 4px 4px 1px 1px black;
 }
+
 .delete-btn {
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffcbf2;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 4px 4px 1px #c0fdff, 4px 4px 1px 1px black;
+}
+
+.cancel-btn {
   margin: 0 auto;
   line-height: 28pt;
   padding: 0 20px;

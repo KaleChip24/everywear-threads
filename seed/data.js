@@ -397,20 +397,6 @@ const insertData = async () => {
       ],
     },
     {
-      price: "64.99",
-      item: "Dress",
-      size: "Medium",
-      style: "Vintage",
-      color: "Grey",
-      brand: "Svitla",
-      description: ' "Siri, play Phil Gerus Time & Again" ',
-      imgURL: [
-        "https://i.etsystatic.com/21015833/r/il/b22aa1/2093299588/il_794xN.2093299588_buze.jpg",
-        "https://i.etsystatic.com/21015833/r/il/7473e9/2140856605/il_794xN.2140856605_6kan.jpg",
-        "https://i.etsystatic.com/21015833/r/il/7498c8/2027778274/il_794xN.2027778274_8eka.jpg",
-      ],
-    },
-    {
       price: "45.99",
       item: "Earrings",
       size: "ONE SIZE",
