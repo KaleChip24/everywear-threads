@@ -1,21 +1,71 @@
+.product-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.details-info {
+  max-width: 45%;
+  max-height: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .details {
  flex-direction: column;
+ justify-content: space-evenly;
  width: 500px;
  height: 300px;
- margin: 50px;
  padding: 20px;
 border: 2px solid black;
 box-shadow: 5px 5px #C0FDFF;
 }
 
+
 th {
   display: flex;
   align-self: flex-start;
  border-top: 1px solid black;
+ margin-top: 10px;
+ padding-top: 10px;
 }
+
 td {
-  margin-top: 5px;
+  margin-top: 8px;
   display: flex;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-evenly;
+  width: 55%;
+  margin: 15px 0;
+
+}
+
+.edit-btn {
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #FFCBF2;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 4px 4px 1px #C0FDFF, 4px 4px 1px 1px black;
+}
+.delete-btn {
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #FFCBF2;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 4px 4px 1px #C0FDFF, 4px 4px 1px 1px black;
 }
 
 @media (max-width: 800px) {

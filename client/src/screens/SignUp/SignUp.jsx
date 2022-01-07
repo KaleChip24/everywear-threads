@@ -2,8 +2,7 @@ import { useState } from "react";
 import { signUp } from "../../services/users";
 import { useNavigate, Link } from "react-router-dom";
 
-import './SignUp.css';
-
+import "./SignUp.css";
 
 export default function SignUp(props) {
   const navigate = useNavigate();
@@ -42,32 +41,26 @@ export default function SignUp(props) {
     }
   };
 
-
-	const renderError = () => {
-		const toggleForm = form.isError ? 'danger' : '';
-		if (form.isError) {
-			return (
-				<button
-					id='sign-in-button'
-					type='submit'
-					className={toggleForm}>
-					{form.errorMsg}
-				</button>
-			);
-		} else {
-			return (
-				<button id='sign-in-button' type='submit'>
-					Sign Up
-				</button>
-			);
-		}
-	};
-
+  const renderError = () => {
+    const toggleForm = form.isError ? "danger" : "";
+    if (form.isError) {
+      return (
+        <button id="sign-in-button" type="submit" className={toggleForm}>
+          {form.errorMsg}
+        </button>
+      );
+    } else {
+      return (
+        <button id="sign-in-button" type="submit">
+          Sign Up
+        </button>
+      );
+    }
+  };
 
   const { username, email, password, passwordConfirmation } = form;
 
-
-	return (
+  return (
 		<div>
 			<div id='form-container-sign-up'>
 				<div id='left-side-sign-up'>
@@ -76,11 +69,10 @@ export default function SignUp(props) {
 						<br />
 						<h4>
 							Welcome to your new fashion journey with Everywear
-							Thread! We are happy to have you here!
+							Threads! We are happy to have you here!
 						</h4>
 						<br />
 						<form onSubmit={onSignUp}>
-							<label>Username</label>
 							<input
 								id='sign-in-input'
 								required
@@ -90,7 +82,6 @@ export default function SignUp(props) {
 								placeholder='Enter username'
 								onChange={handleChange}
 							/>
-							<label>Email address</label>
 							<input
 								id='sign-in-input'
 								required
@@ -100,7 +91,6 @@ export default function SignUp(props) {
 								placeholder='Enter email'
 								onChange={handleChange}
 							/>
-							<label>Password</label>
 							<input
 								id='sign-in-input'
 								required
@@ -110,7 +100,6 @@ export default function SignUp(props) {
 								placeholder='Password'
 								onChange={handleChange}
 							/>
-							<label>Password Confirmation</label>
 							<input
 								id='sign-in-input'
 								required
@@ -123,12 +112,16 @@ export default function SignUp(props) {
 							{renderError()}
 						</form>
 						<br />
-						<p id='sign-in-gateway'>Already signed up?</p>
+						<p className='text'>Already signed up?</p>
 						<br />
 						<Link to={`/sign-in`}>
 							<button id='sign-in-redirect-button'>
 								Sign In
 							</button>
+						</Link>
+						<br />
+						<Link to={`/`}>
+							<button id='back-redirect-button'>Back</button>
 						</Link>
 					</div>
 				</div>
@@ -141,6 +134,5 @@ export default function SignUp(props) {
 				</div>
 			</div>
 		</div>
-	);
-
+  );
 }

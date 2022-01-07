@@ -1,19 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 
-#form-container-sign-up{
+#form-container-sign-up {
   font-family: "Fjalla One";
   display: flex;
   width: 100vw;
-  height:100vh;
+  height: 100%;
 }
 #left-side-sign-up {
   background: white;
   width: 50%;
   height: 100%;
-
 }
 
-#left-wrapper-sign-up{
+#left-wrapper-sign-up {
   width: 40%;
   height: 60%;
   background: #f8f4e5;
@@ -38,13 +37,11 @@
   max-height: 100vh;
 }
 
-
 #sign-in-gateway {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-
 
 #sign-in-input {
   display: flex;
@@ -79,7 +76,20 @@
   border: 1px solid black;
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
 }
-#sign-in-button:hover {
+
+#sign-up-button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+#sign-in-redirect-button:hover {
+  background: black;
+  color: white;
+  border: 1px solid black;
+}
+
+#back-redirect-button:hover {
   background: black;
   color: white;
   border: 1px solid black;
@@ -89,7 +99,30 @@
   background: #ffc8ff;
 }
 
+div .text {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
 #sign-in-redirect-button {
+  display: block;
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+
+#back-redirect-button {
   display: block;
   margin: 0 auto;
   line-height: 28pt;

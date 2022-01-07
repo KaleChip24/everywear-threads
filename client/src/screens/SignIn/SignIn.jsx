@@ -41,34 +41,32 @@ const SignIn = (props) => {
   };
 
   const renderError = () => {
-		const toggleForm = form.isError ? 'danger' : '';
-		if (form.isError) {
-			return (
-				<button
-					id='sign-in-button'
-					type='submit'
-					className={toggleForm}>
-					{form.errorMsg}
-				</button>
-			);
-		} else {
-			return (
-				<button id='sign-in-button' type='submit'>
-					Sign In
-				</button>
-			);
-		}
+    const toggleForm = form.isError ? "danger" : "";
+    if (form.isError) {
+      return (
+        <button id="sign-in-button" type="submit" className={toggleForm}>
+          {form.errorMsg}
+        </button>
+      );
+    } else {
+      return (
+        <button id="sign-in-button" type="submit">
+          Sign In
+        </button>
+      );
+    }
   };
 
   const { email, password } = form;
 
   return (
-
 		<div>
 			<div id='form-container'>
 				<div id='left-side'>
 					<div id='left-wrapper'>
-						<h3>Welcome Back!</h3>
+						<div className='text'>
+							<h3>Welcome Back!</h3>
+						</div>
 						<h4>Please sign in using your credentials.</h4>
 						<br />
 						<form onSubmit={onSignIn}>
@@ -101,19 +99,22 @@ const SignIn = (props) => {
 									Sign Up
 								</button>
 							</Link>
+							<br />
+							<Link to={`/`}>
+								<button id='back-redirect-button'>Back</button>
+							</Link>
 						</p>
 					</div>
 				</div>
 				<div id='right-side'>
 					<img
 						id='image-sign-in'
-						src='https://github.com/KaleChip24/everywear-threads/raw/development/assets/SignUp%2BSignIn%2BUpload/Login.png'
+						src='https://github.com/KaleChip24/everywear-threads/raw/zz-dev/assets/SignUp%2BSignIn%2BUpload/Login.png'
 						alt='signin'
 					/>
 				</div>
 			</div>
 		</div>
-
   );
 };
 export default SignIn;
