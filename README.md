@@ -1,7 +1,7 @@
 
 ### Overview
 
-**Everywear Threads** 
+***[Everywear Threads](https://everywearthreads.netlify.app)***
 
 Everywear Threads is an inclusive second-hand fashion marketplace app where people can search by brands, style and size and find new outfit insipration. Our goal is for users to have a pleasant UI experience while browsing our shop's items, adding/editing their own, and signing up for a personal account. 
 
