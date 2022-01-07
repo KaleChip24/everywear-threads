@@ -10,12 +10,19 @@
   padding: 0 50px;
   width: 98vw;
 }
+
+.add-img {
+  height: 100vh;
+  width: 500px;
+  margin-top: 60px;
+}
 .create-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 10px 40px 10px 40px;
+  margin-top: 40px;
+  padding: 25px 60px 10px 60px;
   font-size: 14pt;
   line-height: 28pt;
   font-family: "Fjalla One";
@@ -24,6 +31,7 @@
   background: #f8f4e5;
   max-width: 54%;
   color: black;
+  box-shadow: 10px 8px 1px #ffa580, 13px 15px 1px 2px black;
 }
 .submit-button {
   margin: 0 auto;
