@@ -1,8 +1,23 @@
+.product-detail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.details-info {
+  max-width: 45%;
+  max-height: 68%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .details {
  flex-direction: column;
+ justify-content: space-evenly;
  width: 500px;
  height: 300px;
- margin: 50px;
  padding: 20px;
 border: 2px solid black;
 box-shadow: 5px 5px #C0FDFF;
@@ -24,7 +39,9 @@ td {
 
 .btn-container {
   display: flex;
-  align-content: center;
+  justify-content: space-evenly;
+  width: 55%;
+  margin: 15px 0;
 
 }
 

@@ -45,49 +45,55 @@ const ProductDetail = (props) => {
             );
           })}
         </div>
-        <table className='details'>
-          <tr className='item'>
-            <th className="item-name" scope="row">{product.item}</th>
-            <td>${product.price}</td>
-          </tr>
-          <tr className='size'>
-            <th scope="row">Size:</th>
-            <td>{product.size}</td>
-          </tr>
-          <tr className='style'>
-            <th scope="row">Style:</th>
-            <td>{product.style}</td>
-          </tr>
-          <tr className='brand'>
-            <th scope="row">Brand:</th>
-            <td>{product.brand}</td>
-          </tr>
-          <tr className='color'>
-            <th scope="row">Color:</th>
-            <td>{product.color}</td>
-          </tr>
-          <tr className='description'>
-            <th scope="row">Product Description:</th>
-            <td>{product.description}</td>
-          </tr>
-        </table>
-        <div className='btn-container'>
-          <button className='edit-btn'>
-            <Link
-              className='edit-link'
-              to={`/products/${product._id}/edit`}
+        <div className="details-info">
+
+          <table className='details'>
+            <tr className='item'>
+              <th className="item-name" scope="row">{product.item}</th>
+              <td>{`$${product.price}`}</td>
+            </tr>
+            <tr className='size'>
+              <th scope="row">Size:</th>
+              <td>{product.size}</td>
+            </tr>
+            <tr className='style'>
+              <th scope="row">Style:</th>
+              <td>{product.style}</td>
+            </tr>
+            <tr className='brand'>
+              <th scope="row">Brand:</th>
+              <td>{product.brand}</td>
+            </tr>
+            <tr className='color'>
+              <th scope="row">Color:</th>
+              <td>{product.color}</td>
+            </tr>
+            <tr className='description'>
+              <th scope="row">Product Description:</th>
+              <td>{product.description}</td>
+            </tr>
+          </table>
+          <div className='btn-container'>
+            <button className='edit-btn'>
+              <Link
+                className='edit-link'
+                to={`/products/${product._id}/edit`}
+              >
+                Edit
+              </Link>
+            </button>
+            <button
+              className='delete-btn'
+              onClick={handleSubmit}
             >
-              Edit
-            </Link>
-          </button>
-          <button
-            className='delete-btn'
-            onClick={handleSubmit}
-          >
-            Delete
-          </button>
+              Delete
+            </button>
+          </div>
+          {/* end btn-container */}
         </div>
+        {/* end details */}
       </div>
+      {/* end info */}
     </Layout>
   );
 };
