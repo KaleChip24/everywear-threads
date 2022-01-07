@@ -41,7 +41,6 @@ const ProductCreate = (props) => {
   };
 
   return (
-    <Layout user={props.user}>
       <div className="add-item">
         <form className="create-form" onSubmit={handleSubmit}>
           <div className="input-list">
@@ -135,13 +134,14 @@ const ProductCreate = (props) => {
             onChange={handleChange}
           />
         </div>
-          <button type="submit" className="submit-button">
+        <button type="submit" className="submit-button">
             Submit
           </button>
         </form>
+        <div className="img-container">
         <img className="add-img" src="https://i.ibb.co/TBG91Ws/Upload.png" alt="New Item"></img>
+        </div>
       </div>
-    </Layout>
   );
 };
 

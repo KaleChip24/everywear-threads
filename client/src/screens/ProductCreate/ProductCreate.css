@@ -1,25 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+
 .add-item {
   font-family: "Fjalla One";
   display: flex;
-  width: 100vw;
-  height: 100vh;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  margin-bottom: 0 auto;
+  padding: 0 50px;
+  width: 98vw;
 }
-
 .create-form {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
+  text-align: center;
+  padding: 10px 40px 10px 40px;
   font-size: 14pt;
   line-height: 28pt;
   font-family: "Fjalla One";
-  margin-bottom: -295px;
   border: none;
   border-bottom: 5px solid black;
   background: #f8f4e5;
-  max-width: 250px;
-  padding-left: 5px;
-  outline: none;
+  max-width: 54%;
   color: black;
+}
+.submit-button {
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+.input-list {
+  margin-bottom: 40px;
 }
 
 .input-price {
@@ -37,6 +55,15 @@
   padding-left: 5px;
   outline: none;
   color: black;
+}
+.image-container {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.add-img {
+  height: 100vh;
+  width: 500px;
 }
 .textarea-description {
   display: flex;
@@ -151,19 +178,6 @@
   color: black;
 }
 
-.submit-button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #ffa580;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
-}
-
 /* input:focus,
 textarea:focus,
 select:focus {
@@ -174,11 +188,6 @@ select:focus {
   display: flex;
 } */
 
-.add-img {
-  height: 100vh;
-  width: 500px;
-}
-
 /* @media (max-width: 500px) {
   .create-form {
     padding-top: 150px;
@@ -188,106 +197,4 @@ select:focus {
   textarea {
     font-size: 28px;
   }
-} */
-
-@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
-
-/* .create-form {
-  font-family: "Fjalla One";
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-}
-
-#left-side-sign-up {
-  background: white;
-  width: 50%;
-  height: 100%;
-}
-
-#left-wrapper-sign-up {
-  width: 40%;
-  height: 60%;
-  background: #f8f4e5;
-  padding: 50px 100px;
-  border: 2px solid black;
-  box-shadow: 15px 15px 1px #ffa580, 15px 15px 1px 2px black;
-  margin: 0 auto;
-  margin-top: 20%;
-}
-
-#right-side-sign-up {
-  display: flex;
-  justify-content: flex-end;
-  right: 0;
-  position: absolute;
-  width: 50%;
-  height: 100vh;
-}
-
-#image-sign-up {
-  max-width: 50vw;
-  max-height: 100vh;
-}
-
-#sign-in-gateway {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.create-form {
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  font-size: 14pt;
-  line-height: 28pt;
-  font-family: "Fjalla One";
-  margin-bottom: 28pt;
-  border: none;
-  border-bottom: 5px solid black;
-  background: #f8f4e5;
-  max-width: 250px;
-  padding-left: 5px;
-  outline: none;
-  color: black;
-}
-
-#sign-in-input:focus {
-  border-bottom: 5px solid #ffa580;
-}
-
-#sign-in-button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #ffa580;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
-}
-#sign-in-button:hover {
-  background: black;
-  color: white;
-  border: 1px solid black;
-}
-
-#sign-in-input::selection {
-  background: #ffc8ff;
-}
-
-#sign-in-redirect-button {
-  display: block;
-  margin: 0 auto;
-  line-height: 28pt;
-  padding: 0 20px;
-  background: #ffa580;
-  letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
-  border: 1px solid black;
-  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
 } */
