@@ -10,12 +10,18 @@
   padding: 0 50px;
   width: 98vw;
 }
+.add-img {
+  height: 100vh;
+  width: 500px;
+  margin-top: 60px;
+}
 .create-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 10px 40px 10px 40px;
+  margin-top: 40px;
+  padding: 25px 60px 10px 60px;
   font-size: 14pt;
   line-height: 28pt;
   font-family: "Fjalla One";
@@ -24,6 +30,21 @@
   background: #f8f4e5;
   max-width: 54%;
   color: black;
+  box-shadow: 10px 8px 1px #ffa580, 13px 15px 1px 2px black;
+}
+.submit-button {
+  margin: 0 auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ffa580;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
+}
+.input-list {
+  margin-bottom: 40px;
 }
 .submit-button {
   margin: 0 auto;
