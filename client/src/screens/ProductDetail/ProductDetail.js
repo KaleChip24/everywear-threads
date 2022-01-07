@@ -48,7 +48,7 @@ const ProductDetail = (props) => {
         <table className='details'>
           <tr className='item'>
             <th className="item-name" scope="row">{product.item}</th>
-            <th scope="row">${product.price}</th>
+            <td>${product.price}</td>
           </tr>
           <tr className='size'>
             <th scope="row">Size:</th>
@@ -66,10 +66,13 @@ const ProductDetail = (props) => {
             <th scope="row">Color:</th>
             <td>{product.color}</td>
           </tr>
+          <tr className='description'>
+            <th scope="row">Product Description:</th>
+            <td>{product.description}</td>
+          </tr>
         </table>
-        <p className="description">Product Description: {product.description}</p>
-        <div className='button-container'>
-          <button className='edit-button'>
+        <div className='btn-container'>
+          <button className='edit-btn'>
             <Link
               className='edit-link'
               to={`/products/${product._id}/edit`}
@@ -78,7 +81,7 @@ const ProductDetail = (props) => {
             </Link>
           </button>
           <button
-            className='delete-button'
+            className='delete-btn'
             onClick={handleSubmit}
           >
             Delete
