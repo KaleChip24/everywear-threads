@@ -109,6 +109,12 @@ h3 {
   justify-content: center;
 }
 
+h4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 #sign-in-redirect-button {
   display: block;
   margin: 0 auto;

@@ -15,23 +15,22 @@
 }
 
 .details {
- flex-direction: column;
- justify-content: space-evenly;
- width: 500px;
- height: 300px;
- padding: 20px;
- background-color: white;
-border: 2px solid black;
-box-shadow: 5px 5px #C0FDFF;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 500px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border: 2px solid black;
+  box-shadow: 5px 5px #c0fdff;
 }
-
 
 th {
   display: flex;
   align-self: flex-start;
- border-top: 1px solid black;
- margin-top: 10px;
- padding-top: 10px;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 
 td {
@@ -44,30 +43,29 @@ td {
   justify-content: space-evenly;
   width: 55%;
   margin: 15px 0;
-
 }
 
 .edit-btn {
   margin: 0 auto;
   line-height: 28pt;
   padding: 0 20px;
-  background: #FFCBF2;
+  background: #ffcbf2;
   letter-spacing: 2px;
   transition: 0.2s all ease-in-out;
   outline: none;
   border: 1px solid black;
-  box-shadow: 4px 4px 1px #C0FDFF, 4px 4px 1px 1px black;
+  box-shadow: 4px 4px 1px #c0fdff, 4px 4px 1px 1px black;
 }
 .delete-btn {
   margin: 0 auto;
   line-height: 28pt;
   padding: 0 20px;
-  background: #FFCBF2;
+  background: #ffcbf2;
   letter-spacing: 2px;
   transition: 0.2s all ease-in-out;
   outline: none;
   border: 1px solid black;
-  box-shadow: 4px 4px 1px #C0FDFF, 4px 4px 1px 1px black;
+  box-shadow: 4px 4px 1px #c0fdff, 4px 4px 1px 1px black;
 }
 
 @media (max-width: 800px) {
@@ -75,21 +73,22 @@ td {
     display: flex;
     flex-direction: column;
   }
-    .details {
-      flex-direction: column;
-      justify-content: space-evenly;
-      width: 350px;
-      padding: 20px;
-      background-color: white;
-     border: 2px solid black;
-     box-shadow: 5px 5px #C0FDFF;
-     }
+  .details {
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 350px;
+    padding: 20px;
+    background-color: white;
+    border: 2px solid black;
+    box-shadow: 5px 5px #c0fdff;
+  }
 
   .button-container {
-  display: flex;
-  justify-content: space-evenly;
-  width: 66%;
-  margin: 21px 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 66%;
+    margin: 21px 0;
+    margin-top: 60px;
   }
   .edit-btn,
   .delete-btn {

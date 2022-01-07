@@ -8,6 +8,7 @@
   transition: 250ms all;
   padding: 20px;
   margin-bottom: 60px;
+  border-color: rgb(194, 254, 255);
 }
 
 /*this effects the boxes on the products screen*/
@@ -30,7 +31,12 @@ details screen*/
 }
 
 .price {
-  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+  color: #e5b3fe;
+  text-shadow: 2px 2px #070707;
+  font-size: 25px;
   padding: 10px;
 }
 

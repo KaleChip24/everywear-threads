@@ -80,11 +80,12 @@ const Products = (props) => {
 
   return (
     <Layout user={props.user}>
-      <div className="filters">
-        <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
-        <Sort onSubmit={handleSubmit} handleSort={handleSort} />
-      </div>
-      <div className="card-layout">
+      <div className="products-container">
+        <div className="filters">
+          <Search onSubmit={handleSubmit} handleSearch={handleSearch} />
+          <Sort onSubmit={handleSubmit} handleSort={handleSort} />
+        </div>
+        {/* <div className="card-layout"> */}
         <div className="products">
           {searchResult.map((product, index) => {
             return (
@@ -101,6 +102,7 @@ const Products = (props) => {
             );
           })}
         </div>
+        {/* </div> */}
       </div>
     </Layout>
   );

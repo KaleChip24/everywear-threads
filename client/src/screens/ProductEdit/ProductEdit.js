@@ -10,7 +10,7 @@ const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     item: "",
     description: "",
-    imgURL: "",
+    imgURL: [],
     price: "",
     brand: "",
     size: "",
@@ -146,6 +146,7 @@ const ProductEdit = (props) => {
 				</form>
 			</div>
 		</Layout>
+
   );
 };
 
