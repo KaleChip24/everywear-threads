@@ -8,14 +8,14 @@ const Footer = () => {
       <div className="team_links">
         <div className="kale-links">
           <p>Kale</p>
-          <strong>
-            <a
-              href="https://github.com/KaleChip24"
-              target="_blank"
-              rel="noreferrer">
+          <a
+            href="https://github.com/KaleChip24"
+            target="_blank"
+            rel="noreferrer">
+            <strong>
               <VscGithub></VscGithub>
-            </a>
-          </strong>
+            </strong>
+          </a>
           <a
             href="https://www.linkedin.com/in/oharakale/"
             target="_blank"
@@ -51,6 +51,22 @@ const Footer = () => {
           </a>
           <a className="linkdIn"
             href="https://www.linkedin.com/in/lavellHCollins/"
+            target="_blank"
+            rel="noreferrer">
+            <FiLinkedin></FiLinkedin>
+          </a>
+        </div>
+        <div className="kaheem-links">
+          <p>Kaheem</p>
+          <a
+            className="gitHub"
+            href="https://github.com/kashfr"
+            target="_blank"
+            rel="noreferrer">
+            <VscGithub></VscGithub>
+          </a>
+          <a className="linkdIn"
+            href="https://www.linkedin.com/in/kaheem-freeman-7b8b349b/"
             target="_blank"
             rel="noreferrer">
             <FiLinkedin></FiLinkedin>
