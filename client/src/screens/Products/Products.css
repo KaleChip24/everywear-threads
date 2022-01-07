@@ -1,13 +1,13 @@
-.products-container{
+/* .products-container{
   display: flex;
   flex-direction: column;
-}
+} */
 
-.products{
-  align-items: center;
+.products, .products-container{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap ;
+  justify-content: center;
   margin: 10px;
 }
 .products img {
