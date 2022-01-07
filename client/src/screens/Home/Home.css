@@ -8,6 +8,10 @@
   margin-left: 80px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .landing-blerb {
   background-color: white;
   padding: 20px;
