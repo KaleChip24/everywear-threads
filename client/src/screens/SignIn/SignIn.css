@@ -11,7 +11,7 @@
   align-items: flex-start;
 }
 
-div .left-side {
+#left-side {
   left: 0;
   position: absolute;
   background: white;

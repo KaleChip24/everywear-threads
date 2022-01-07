@@ -14,9 +14,9 @@
 
 .landing-blerb {
   background-color: white;
-  align-self: flex-end;
   padding: 20px;
   width: 300px;
+  margin-top: 50px;
   border: 1px solid black;
   box-shadow: 5px 5px 1px #deaaff;
 }
