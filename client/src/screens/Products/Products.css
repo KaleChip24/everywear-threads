@@ -1,21 +1,26 @@
-/*adjusts images on the products screen*/
-div .products img {
+.products-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+}
+
+.products{
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap ;
+  margin: 10px;
+}
+.products img {
   padding: 40px;
   height: 400px;
 }
 
-div .card-layout {
+.card-layout {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 400px;
+  /* width: 400px; */
   justify-content: space-around;
-  /* flex-flow: column wrap; */
-  /* justify-items: flex-start; */
 }
 
 .filters {
@@ -26,7 +31,7 @@ div .card-layout {
   padding: 4px;
 }
 
-div .sort-container {
+.sort-container {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -42,7 +47,6 @@ label {
 }
 
 select {
-  /* background-color: black; */
   cursor: pointer;
   border: none;
   font-size: 18px;
