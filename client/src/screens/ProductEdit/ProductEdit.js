@@ -14,7 +14,7 @@ const ProductEdit = (props) => {
     price: "",
     brand: "",
     size: "",
-    style: "", 
+    style: "",
     color: "",
   });
 
@@ -54,48 +54,51 @@ const ProductEdit = (props) => {
       <div className="product-edit">
         <div className="image-container">
           <img
+            id="edit-img"
             className="edit-product-image"
             src={product.imgURL[0]}
             alt={product.item}
           />
           <img
+            id="edit-img"
             className="edit-product-image"
             src={product.imgURL[1]}
             alt={product.item}
           />
           <img
+            id="edit-img"
             className="edit-product-image"
             src={product.imgURL[2]}
             alt={product.item}
           />
           <form onSubmit={handleSubmit}>
-          <input
-            className="edit-input-image-link"
-            placeholder="Upload an Image"
-            value={props.imgURL}
-            name="imgURL"
-            id="0"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="edit-input-image-link"
-            placeholder="Upload an Image"
-            value={props.imgURL}
-            name="imgURL"
-            id="1"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="edit-input-image-link"
-            placeholder="Upload an Image"
-            value={props.imgURL}
-            name="imgURL"
-            id="2"
-            required
-            onChange={handleChange}
-          />
+            <input
+              className="edit-input-image-link"
+              placeholder="Upload an Image"
+              value={props.imgURL}
+              name="imgURL"
+              id="0"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="edit-input-image-link"
+              placeholder="Upload an Image"
+              value={props.imgURL}
+              name="imgURL"
+              id="1"
+              required
+              onChange={handleChange}
+            />
+            <input
+              className="edit-input-image-link"
+              placeholder="Upload an Image"
+              value={props.imgURL}
+              name="imgURL"
+              id="2"
+              required
+              onChange={handleChange}
+            />
           </form>
         </div>
         <form className="edit-form" onSubmit={handleSubmit}>
@@ -150,7 +153,7 @@ const ProductEdit = (props) => {
             required
             onChange={handleChange}
           />
-          <button type="submit" className="save-button">
+          <button type="submit" className="save-btn">
             Save
           </button>
         </form>
