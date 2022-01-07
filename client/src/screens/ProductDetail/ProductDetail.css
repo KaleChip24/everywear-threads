@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding: 100px;
 }
 
 .details-info {
@@ -19,6 +20,7 @@
  width: 500px;
  height: 300px;
  padding: 20px;
+ background-color: white;
 border: 2px solid black;
 box-shadow: 5px 5px #C0FDFF;
 }
@@ -69,21 +71,28 @@ td {
 }
 
 @media (max-width: 800px) {
-  .product-detail-image {
-    width: 300px;
-    margin: 15px;
-    padding: 10px;
+  .detail-image {
+    display: flex;
+    flex-direction: column;
   }
-  .product-detail {
-    padding: 0px;
-    padding-top: 120px;
-  }
+    .details {
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 350px;
+      padding: 20px;
+      background-color: white;
+     border: 2px solid black;
+     box-shadow: 5px 5px #C0FDFF;
+     }
+
   .button-container {
-    padding: 20px;
-    padding-bottom: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  width: 66%;
+  margin: 21px 0;
   }
-  .edit-button,
-  .delete-button {
+  .edit-btn,
+  .delete-btn {
     width: 40%;
   }
 }

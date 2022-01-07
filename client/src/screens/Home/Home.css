@@ -4,10 +4,6 @@
   }
 }
 
-/* .landing-page {
-  display: flex;
-} */
-
 .blerb {
   margin-left: 80px;
 }
@@ -21,16 +17,14 @@
   box-shadow: 5px 5px 1px #deaaff;
 }
 
-.home-btn {
+#shop-now {
   display: flex;
+  width: 130px;
   justify-content: center;
   margin: 0 auto;
-  line-height: 28pt;
   padding: 20px;
   background: #ffa580;
   letter-spacing: 2px;
-  transition: 0.2s all ease-in-out;
-  outline: none;
   border: 1px solid black;
   box-shadow: 3px 3px 1px #95a4ff, 3px 3px 1px 1px black;
 }
