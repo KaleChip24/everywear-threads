@@ -99,6 +99,16 @@
   background: #ffc8ff;
 }
 
+div .text {
+  display: flex;
+  justify-content: center;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
 #sign-in-redirect-button {
   display: block;
   margin: 0 auto;

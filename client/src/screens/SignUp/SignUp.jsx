@@ -68,12 +68,11 @@ export default function SignUp(props) {
             <h3>Sign Up</h3>
             <br />
             <h4>
-              Welcome to your new fashion journey with Everywear Thread! We are
+              Welcome to your new fashion journey with Everywear Threads! We are
               happy to have you here!
             </h4>
             <br />
             <form onSubmit={onSignUp}>
-              <label>Username</label>
               <input
                 id="sign-in-input"
                 required
@@ -83,7 +82,6 @@ export default function SignUp(props) {
                 placeholder="Enter username"
                 onChange={handleChange}
               />
-              <label>Email address</label>
               <input
                 id="sign-in-input"
                 required
@@ -93,7 +91,6 @@ export default function SignUp(props) {
                 placeholder="Enter email"
                 onChange={handleChange}
               />
-              <label>Password</label>
               <input
                 id="sign-in-input"
                 required
@@ -103,7 +100,6 @@ export default function SignUp(props) {
                 placeholder="Password"
                 onChange={handleChange}
               />
-              <label>Password Confirmation</label>
               <input
                 id="sign-in-input"
                 required
@@ -116,7 +112,7 @@ export default function SignUp(props) {
               {renderError()}
             </form>
             <br />
-            <p id="sign-in-gateway">Already signed up?</p>
+            <p className="text">Already signed up?</p>
             <br />
             <Link to={`/sign-in`}>
               <button id="sign-in-redirect-button">Sign In</button>

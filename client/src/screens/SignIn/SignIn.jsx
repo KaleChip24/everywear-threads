@@ -64,7 +64,9 @@ const SignIn = (props) => {
       <div id="form-container">
         <div id="left-side">
           <div id="left-wrapper">
-            <h3>Welcome Back!</h3>
+            <div className="text">
+              <h3>Welcome Back!</h3>
+            </div>
             <h4>Please sign in using your credentials.</h4>
             <br />
             <form onSubmit={onSignIn}>
