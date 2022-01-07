@@ -61,76 +61,78 @@ export default function SignUp(props) {
   const { username, email, password, passwordConfirmation } = form;
 
   return (
-    <div>
-      <div id="form-container-sign-up">
-        <div id="left-side-sign-up">
-          <div id="left-wrapper-sign-up">
-            <h3>Sign Up</h3>
-            <br />
-            <h4>
-              Welcome to your new fashion journey with Everywear Threads! We are
-              happy to have you here!
-            </h4>
-            <br />
-            <form onSubmit={onSignUp}>
-              <input
-                id="sign-in-input"
-                required
-                type="text"
-                name="username"
-                value={username}
-                placeholder="Enter username"
-                onChange={handleChange}
-              />
-              <input
-                id="sign-in-input"
-                required
-                type="email"
-                name="email"
-                value={email}
-                placeholder="Enter email"
-                onChange={handleChange}
-              />
-              <input
-                id="sign-in-input"
-                required
-                name="password"
-                value={password}
-                type="password"
-                placeholder="Password"
-                onChange={handleChange}
-              />
-              <input
-                id="sign-in-input"
-                required
-                name="passwordConfirmation"
-                value={passwordConfirmation}
-                type="password"
-                placeholder="Confirm Password"
-                onChange={handleChange}
-              />
-              {renderError()}
-            </form>
-            <br />
-            <p className="text">Already signed up?</p>
-            <br />
-            <Link to={`/sign-in`}>
-              <button id="sign-in-redirect-button">Sign In</button>
-            </Link>
-            <br />
-            <Link to={`/`}>
-              <button id="back-redirect-button">Back</button>
-            </Link>
-          </div>
-        </div>
-        <div id="right-side-sign-up">
-          <img
-            id="image-sign-up"
-            src="https://github.com/KaleChip24/everywear-threads/raw/zz-dev/assets/SignUp%2BSignIn%2BUpload/Sign-Up.png"
-            alt="signin"
-          />
-        </div>
-      </div>
-    </div>
+		<div>
+			<div id='form-container-sign-up'>
+				<div id='left-side-sign-up'>
+					<div id='left-wrapper-sign-up'>
+						<h3>Sign Up</h3>
+						<br />
+						<h4>
+							Welcome to your new fashion journey with Everywear
+							Threads! We are happy to have you here!
+						</h4>
+						<br />
+						<form onSubmit={onSignUp}>
+							<input
+								id='sign-in-input'
+								required
+								type='text'
+								name='username'
+								value={username}
+								placeholder='Enter username'
+								onChange={handleChange}
+							/>
+							<input
+								id='sign-in-input'
+								required
+								type='email'
+								name='email'
+								value={email}
+								placeholder='Enter email'
+								onChange={handleChange}
+							/>
+							<input
+								id='sign-in-input'
+								required
+								name='password'
+								value={password}
+								type='password'
+								placeholder='Password'
+								onChange={handleChange}
+							/>
+							<input
+								id='sign-in-input'
+								required
+								name='passwordConfirmation'
+								value={passwordConfirmation}
+								type='password'
+								placeholder='Confirm Password'
+								onChange={handleChange}
+							/>
+							{renderError()}
+						</form>
+						<br />
+						<p className='text'>Already signed up?</p>
+						<br />
+						<Link to={`/sign-in`}>
+							<button id='sign-in-redirect-button'>
+								Sign In
+							</button>
+						</Link>
+						<br />
+						<Link to={`/`}>
+							<button id='back-redirect-button'>Back</button>
+						</Link>
+					</div>
+				</div>
+				<div id='right-side-sign-up'>
+					<img
+						id='image-sign-up'
+						src='https://zhaozhong.mo.cloudinary.net/Login.png'
+						alt='signin'
+					/>
+				</div>
+			</div>
+		</div>
   );
 }
