@@ -10,7 +10,7 @@ const ProductEdit = (props) => {
   const [product, setProduct] = useState({
     item: "",
     description: "",
-    imgURL: "",
+    imgURL: [],
     price: "",
     brand: "",
     size: "",
@@ -55,13 +55,23 @@ const ProductEdit = (props) => {
         <div className="image-container">
           <img
             className="edit-product-image"
-            src={product.imgURL}
+            src={product.imgURL[0]}
+            alt={product.item}
+          />
+          <img
+            className="edit-product-image"
+            src={product.imgURL[1]}
+            alt={product.item}
+          />
+          <img
+            className="edit-product-image"
+            src={product.imgURL[2]}
             alt={product.item}
           />
           <form onSubmit={handleSubmit}>
           <input
             className="edit-input-image-link"
-            placeholder="Image 1"
+            placeholder="Upload an Image"
             value={props.imgURL}
             name="imgURL"
             id="0"
@@ -70,7 +80,7 @@ const ProductEdit = (props) => {
           />
           <input
             className="edit-input-image-link"
-            placeholder="Image "
+            placeholder="Upload an Image"
             value={props.imgURL}
             name="imgURL"
             id="1"
@@ -79,7 +89,7 @@ const ProductEdit = (props) => {
           />
           <input
             className="edit-input-image-link"
-            placeholder="Image 1"
+            placeholder="Upload an Image"
             value={props.imgURL}
             name="imgURL"
             id="2"
