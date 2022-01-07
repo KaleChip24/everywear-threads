@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { createProduct } from "../../services/products";
 import Layout from "../../components/Layout/Layout";
+import { dialogClasses } from "@mui/material";
 
 const ProductCreate = (props) => {
   let navigate = useNavigate();
@@ -43,6 +44,7 @@ const ProductCreate = (props) => {
     <Layout user={props.user}>
       <div className="add-item">
         <form className="create-form" onSubmit={handleSubmit}>
+          <div className="input-list">
           <input
             className="input-price"
             placeholder="Price"
@@ -51,7 +53,6 @@ const ProductCreate = (props) => {
             required
             onChange={handleChange}
           />
-          <div className="input-description">
           <input
             className="textarea-description"
             rows={10}
@@ -61,7 +62,6 @@ const ProductCreate = (props) => {
             required
             onChange={handleChange}
           />
-          </div>
           <input
             className="input-image-link"
             placeholder="Image 1"
@@ -134,6 +134,7 @@ const ProductCreate = (props) => {
             autoFocus
             onChange={handleChange}
           />
+        </div>
           <button type="submit" className="submit-button">
             Submit
           </button>

@@ -6,8 +6,8 @@ import { config } from "react-spring";
 export default class Example extends Component {
   state = {
     goToSlide: 2,
-    goToSlideDelay: 5,
-    offsetRadius: 8,
+    goToSlideDelay: 2000,
+    offsetRadius: 5,
     showNavigation: false,
     config: config.slow
   };

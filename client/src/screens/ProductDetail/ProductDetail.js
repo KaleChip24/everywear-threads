@@ -47,7 +47,7 @@ const ProductDetail = (props) => {
         </div>
         <table className='details'>
           <tr className='item'>
-            <th scope="row">{product.item}</th>
+            <th className="item-name" scope="row">{product.item}</th>
             <th scope="row">${product.price}</th>
           </tr>
           <tr className='size'>
@@ -67,7 +67,7 @@ const ProductDetail = (props) => {
             <td>{product.color}</td>
           </tr>
         </table>
-        <p>Product Description: {product.description}</p>
+        <p className="description">Product Description: {product.description}</p>
         <div className='button-container'>
           <button className='edit-button'>
             <Link

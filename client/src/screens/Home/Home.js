@@ -15,7 +15,7 @@ const Home = (props) => {
         </div>
         <div className="home-btn">
           <Link to={`/products`}>
-            <button>Shop Now</button>
+            <button className="shop-now">Shop Now</button>
           </Link>
           <ProductCards />
         </div>
