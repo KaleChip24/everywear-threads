@@ -50,102 +50,102 @@ const ProductEdit = (props) => {
   };
 
   return (
-    <Layout user={props.user}>
-      <div className="product-edit">
-        <div className="image-container">
-          <img
-            className="edit-product-image"
-            src={product.imgURL}
-            alt={product.item}
-          />
-          <form onSubmit={handleSubmit}>
-          <input
-            className="edit-input-image-link"
-            placeholder="Image 1"
-            value={props.imgURL}
-            name="imgURL"
-            id="0"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="edit-input-image-link"
-            placeholder="Image "
-            value={props.imgURL}
-            name="imgURL"
-            id="1"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="edit-input-image-link"
-            placeholder="Image 1"
-            value={props.imgURL}
-            name="imgURL"
-            id="2"
-            required
-            onChange={handleChange}
-          />
-          </form>
-        </div>
-        <form className="edit-form" onSubmit={handleSubmit}>
-          <input
-            className="input-brand"
-            placeholder="Brand"
-            value={product.brand}
-            name="brand"
-            required
-            autoFocus
-            onChange={handleChange}
-          />
-          <input
-            className="input-price"
-            placeholder="Price"
-            value={product.price}
-            name="price"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input-size"
-            placeholder="Size"
-            value={product.size}
-            name="size"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input-color"
-            placeholder="Color"
-            value={product.color}
-            name="color"
-            required
-            onChange={handleChange}
-          />
-          <input
-            className="input-style"
-            placeholder="Style"
-            value={product.style}
-            name="style"
-            required
-            onChange={handleChange}
-          />
-          <textarea
-            className="textarea-description"
-            rows={10}
-            cols={78}
-            placeholder="Description"
-            value={product.description}
-            name="description"
-            required
-            onChange={handleChange}
-          />
-          <button type="submit" className="save-button">
-            Save
-          </button>
-        </form>
-      </div>
-    </Layout>
+		<Layout user={props.user}>
+			<div id='product-edit' className='product-edit'>
+				<div className='image-container'>
+					<img
+						className='edit-product-image'
+						src={product.imgURL}
+						alt={product.item}
+					/>
+					<form onSubmit={handleSubmit}>
+						<input
+							className='edit-input-image-link'
+							placeholder='Image 1'
+							value={props.imgURL}
+							name='imgURL'
+							id='0'
+							required
+							onChange={handleChange}
+						/>
+						<input
+							className='edit-input-image-link'
+							placeholder='Image '
+							value={props.imgURL}
+							name='imgURL'
+							id='1'
+							required
+							onChange={handleChange}
+						/>
+						<input
+							className='edit-input-image-link'
+							placeholder='Image 1'
+							value={props.imgURL}
+							name='imgURL'
+							id='2'
+							required
+							onChange={handleChange}
+						/>
+					</form>
+				</div>
+				<form className='edit-form' onSubmit={handleSubmit}>
+					<input
+						className='input-brand'
+						placeholder='Brand'
+						value={product.brand}
+						name='brand'
+						required
+						autoFocus
+						onChange={handleChange}
+					/>
+					<input
+						className='input-price'
+						placeholder='Price'
+						value={product.price}
+						name='price'
+						required
+						onChange={handleChange}
+					/>
+					<input
+						className='input-size'
+						placeholder='Size'
+						value={product.size}
+						name='size'
+						required
+						onChange={handleChange}
+					/>
+					<input
+						className='input-color'
+						placeholder='Color'
+						value={product.color}
+						name='color'
+						required
+						onChange={handleChange}
+					/>
+					<input
+						className='input-style'
+						placeholder='Style'
+						value={product.style}
+						name='style'
+						required
+						onChange={handleChange}
+					/>
+					<textarea
+						className='textarea-description'
+						rows={10}
+						cols={78}
+						placeholder='Description'
+						value={product.description}
+						name='description'
+						required
+						onChange={handleChange}
+					/>
+					<button type='submit' className='save-button'>
+						Save
+					</button>
+				</form>
+			</div>
+		</Layout>
   );
 };
 

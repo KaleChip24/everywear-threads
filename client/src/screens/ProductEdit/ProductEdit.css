@@ -1,3 +1,10 @@
+#product-edit {
+  width: 100vw;
+  display:flex;
+  height: auto;
+  margin: 0 auto;
+}
+
 @media (max-width: 500px) {
   .input-name {
     margin-left: -10px;
