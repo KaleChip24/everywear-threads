@@ -88,7 +88,7 @@ const ProductDetail = (props) => {
               Delete
             </button>
             <button className="cancel-btn">
-              <Link className="cancel-link" to={`/`}>
+              <Link className="cancel-link" to={`/products`}>
                 Cancel
               </Link>
             </button>
